@@ -1,13 +1,17 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<title>Tony </title>
+<title>Page Title</title>
 </head>
 
 <body>
-<h1> Tony's first page</h1>
-<p> Tony's first pasge!!</p>
+
+<h1>My First Heading</h1>
+<h2> my first headinh</h2>
+<p>My first paragraph.</p>
+<p1>My first paragraph2.</p1>
 
 
 </body>
-
 </html>
