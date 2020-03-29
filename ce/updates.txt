@@ -1,8 +1,9 @@
 Post Submission A1 Updates 
 - update Submission index.html
 - add tony.png
-- add RMIT logo.png
-- link to my web site : https://hansangyeob.github.io/wp-s3821179/
+- add logo.png
+- link to my web site : 
+https://hansangyeob.github.io/wp-s3821179.github.io/
 
 Post Submission A2 Updates 
 

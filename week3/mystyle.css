@@ -1,0 +1,43 @@
+   /* Start of Embedded Author Stylesheet */
+   * p {
+    color: green;
+    background-color: khaki;
+    font-size: xx-large;
+    text-align: center;
+    width: 80%;
+    border: thick red solid;
+    padding: 2px 10px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: sans-serif;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+ol{
+
+    color: green;
+    font-weight: bold;
+}
+
+ol li{
+    color: greenyellow;
+}
+
+ol > li{
+    color: purple;
+}
+
+ol div{
+    color: yellow;
+}
+
+ol div ~ h4{
+    color: orange;
+}
+/* End of Embedded Author Stylesheet */
