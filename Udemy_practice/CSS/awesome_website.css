@@ -1,0 +1,54 @@
+.top-container{
+  
+    background-color: #d1f5d3;
+
+}
+
+
+.cloud_yo{
+    background-color:#d1f5d3;
+    width: 100px;
+    height: 100px;
+}
+
+
+.mountain_yo{
+    background-color:#d1f5d3;
+    width: 300px;
+    height: 300px;
+}
+
+.pro{
+    text-decoration: underline;
+}
+
+/*
+body{
+    margin: 0px;
+
+}
+ 
+h1{
+    margin-top: 0px;
+}
+
+.middle-container{
+    width: 200px;
+    height: 200px;
+    margin-left: 260px;
+    border: 20px;
+    border-color: black;
+    border-style: solid;
+    background-color: yellowgreen;
+}
+
+.bottom-container{
+    width: 200px;
+    height: 200px;
+    border: 10px;
+    border-color: black;
+    background-color: blue;
+    border-style: solid;
+    margin-left: 480px;
+}
+*/
