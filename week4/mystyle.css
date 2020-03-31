@@ -1,0 +1,79 @@
+p + p{
+    color : purple;
+}
+
+
+a:link{
+    color: darkred;
+}
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    color: green;
+    background-color: yellow;
+}
+
+a:active{
+    color:brown;
+}
+
+
+ol li:first-child {
+    color:red
+}
+
+ol li:nth-child(2n){
+    color: hotpink;
+}
+
+/*
+ol li:last-child{
+    color: green
+}
+*/
+
+
+table,th,td{
+    border-collapse: collapse;
+    border: solid 1px;
+}
+
+#stylish_table{
+    
+    border-color: red;
+}
+
+td{
+    color: green;
+}
+
+tr:first-child{
+    color:royalblue;
+    background-color: skyblue;
+}
+
+p::first-line{
+    color: darkcyan;
+    font-style: italic;
+    font-size: 150%
+}
+
+p::first-letter{
+    color: darkolivegreen;
+    font-size: 200%;
+    font-style:italic; 
+}
+
+
+p::selection{
+    color: yellowgreen;
+}
+
+p::before, p::after{
+    content:'\2764' ;
+    color:darkmagenta
+
+    
+}
