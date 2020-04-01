@@ -1,6 +1,18 @@
+body{
+    text-align: center;
+    font-family: serif;
+    
+}
+h1{
+    font:bold;
+    width: 30%;
+    margin: 0 auto 0 auto ;
+}
+
+
 .top-container{
   
-    background-color: #d1f5d3;
+    background-color:whitesmoke;
 
 }
 
@@ -9,18 +21,35 @@
     background-color:#d1f5d3;
     width: 100px;
     height: 100px;
+    position: relative;
+    left: 150px;
 }
 
+.cloud_yo1{
+    background-color:#d1f5d3;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 320px;
+    right: 40px;
+}
 
 .mountain_yo{
-    background-color:#d1f5d3;
+    background-color:gray;
     width: 300px;
     height: 300px;
+    position: relative;
+    right: 40px;
+ 
+
 }
 
 .pro{
     text-decoration: underline;
 }
+
+
+
 
 /*
 body{
