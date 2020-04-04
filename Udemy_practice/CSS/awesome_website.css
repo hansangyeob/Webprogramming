@@ -9,6 +9,16 @@ h1{
     margin: 0 auto 0 auto ;
 }
 
+.greeting{
+    height: 200px;
+    width: 200px;
+    border-radius: 0;
+}
+.coding{
+    height: 200px;
+    width: 200px;
+    border-radius: 0% ;
+}
 
 .top-container{
   
@@ -18,7 +28,7 @@ h1{
 
 
 .cloud_yo{
-    background-color:#d1f5d3;
+    background-color:whitesmoke;
     width: 100px;
     height: 100px;
     position: relative;
@@ -26,7 +36,7 @@ h1{
 }
 
 .cloud_yo1{
-    background-color:#d1f5d3;
+    background-color:whitesmoke;
     width: 100px;
     height: 100px;
     position: relative;
@@ -35,7 +45,7 @@ h1{
 }
 
 .mountain_yo{
-    background-color:gray;
+    background-color:whitesmoke;
     width: 300px;
     height: 300px;
     position: relative;
