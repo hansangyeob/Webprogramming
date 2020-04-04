@@ -1,18 +1,19 @@
 body{
     text-align: center;
-    font-family: serif;
+    font-family: sans-serif;
     
 }
 h1{
     font:bold;
-    width: 30%;
+    width: 50%;
     margin: 0 auto 0 auto ;
 }
 
 .greeting{
     height: 200px;
     width: 200px;
-    border-radius: 0;
+    border-radius: 00%;
+    background-color: yellowgreen;
 }
 .coding{
     height: 200px;
@@ -54,6 +55,11 @@ h1{
 
 }
 
+.Kathy{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
 .pro{
     text-decoration: underline;
 }
