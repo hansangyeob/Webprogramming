@@ -7,18 +7,37 @@ h1{
     font:bold;
     width: 50%;
     margin: 0 auto 0 auto ;
+    font-size: 60px;
+    line-height: 2;
 }
+/* 16px = 100% =1em*/
 
+.p1{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
 .greeting{
     height: 200px;
     width: 200px;
     border-radius: 00%;
     background-color: yellowgreen;
 }
-.coding{
-    height: 200px;
-    width: 200px;
+.coding1{
+    width: 25%;
     border-radius: 0% ;
+    float: left;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin: auto 100 auto 100;
+}
+
+.coding2{   
+    width: 25%;
+    border-radius: 0% ;
+    float: right;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin: auto 100 auto 100;
 }
 
 .top-container{
@@ -33,7 +52,7 @@ h1{
     width: 100px;
     height: 100px;
     position: relative;
-    left: 150px;
+    left: 180px;
 }
 
 .cloud_yo1{
@@ -42,7 +61,7 @@ h1{
     height: 100px;
     position: relative;
     bottom: 320px;
-    right: 40px;
+    right: 110px;
 }
 
 .mountain_yo{
@@ -61,8 +80,26 @@ h1{
 }
 
 
+.skill-row1{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    line-height: 2;
+    margin-bottom: 50px;
+
+}
 
 
+.skill-row2{
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    text-align: right;
+    line-height: 2;
+    margin-bottom: 70px;
+
+}
 /*
 body{
     margin: 0px;
