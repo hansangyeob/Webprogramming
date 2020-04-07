@@ -1,41 +1,99 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Assignment 2</title>
-    
-    <!-- Keep wireframe.css for debugging, add your css to style.css -->
-    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled> 
-    <link id='stylecss' type="text/css" rel="stylesheet" href="../style.css">
 
-    <script src='../wireframe.js'></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 2(S3821179)</title>
 
-  <body>
+  <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+  <link id='stylecss' type="text/css" rel="stylesheet" href="../a2/style.css">
 
-    <header>
-      <div>Put company logo and name here</div>
-    </header>
+  <script src='../wireframe.js'></script>
+</head>
 
-    <nav>
-      <div>Put website navigation links here</div>
-    </nav>
+<body>
 
-    <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
-      </article>
-    </main>
+  <header>
+    <div>
+      <img class="logo-left" src="../a2/img/cloud (1).png" alt="cinema">
+      <h1>Welcome to Cinema <em> Heaven</em>.</h1>
+      <img class="logo-right" src="../a2/img/cloud (1).png" alt="cinema">
+    </div>
 
-    <footer>
-      <div>&copy;<script>
+    <div>
+      <img class="front-page-image" src="../a2/img/cinema (1).png" alt="">
+    </div>
+  </header>
+
+  <nav class="navigation">
+    <ul class="nav-main-bar">
+      <li class="nav-li"><a href="../a2/link/About_us.html">About us</a></li>
+      <li><a href="../a2/link/price.html">prices</a></li>
+      <li><a href="../a2/link/Now_showing.html">Now showing</a></li>
+      <li><a href="../a2/link/Synopsis.html">Synopsis</a></li>
+    </ul>
+
+  </nav>
+
+  <main>
+    <article id='Website Under Construction'>
+      <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
+      <img src='https://cdn.pixabay.com/photo/2017/06/20/08/12/maintenance-2422173_1280.png' height="10%" width="10%"
+        alt='Website Under Construction' />
+    </article>
+  </main>
+
+
+  <div class="parallax1"></div>
+
+  <div class="parallax2">
+    about us
+  </div>
+
+  <div class="parallax1"></div>
+<!--    -->
+
+  <div class="parallax1"></div>
+
+  <div class="parallax2">
+    price
+
+  </div>
+
+  <div class="parallax1"></div>
+<!--    -->
+
+  <div class="parallax1"></div>
+
+  <div class="parallax2">
+    nnow showing
+  </div>
+
+  <div class="parallax1"></div>
+<!--    -->
+
+  <div class="parallax1"></div>
+
+  <div class="parallax2">
+    synopsis
+  </div>
+
+  <div class="parallax1"></div>
+  
+  <!-- footer from here   -->
+  <footer>
+    <div>&copy;
+      <script>
         document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-      <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-    </footer>
+      </script> Han sang yeob, S3821179 Last modified
+      <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
+    <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
+      Programming course at RMIT University in Melbourne, Australia.</div>
+    <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+  </footer>
 
-  </body>
+</body>
+
 </html>
