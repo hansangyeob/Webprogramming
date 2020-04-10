@@ -170,3 +170,22 @@ table {
   margin-left: 5%;
   margin-bottom: 5%;
 }
+
+#now-showing{
+  height: 20rem;
+  width: 20rem;
+  padding: 5rem;
+  border: 0.5rem solid gray;
+  margin: 0;
+};
+
+#now-showing-heading{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-right: 10%;
+  padding-left: 10%;
+};
+
+ #movie-poster-text{
+float: right;
+};
