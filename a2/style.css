@@ -16,7 +16,7 @@
 
 em,strong
 {
-  color:#f2a51a;
+  color:#ef962d;
 }
 
 h1{
@@ -98,7 +98,7 @@ body,html{
 }
 
 .parallax2{
-height:1000px;
+height:1100px;
 font-size:1rem
 }
 
@@ -109,10 +109,17 @@ font-size:1rem
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2{
-  padding-top: 5%;
 
-}
+h2{
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-style: italic;
+    font-size: 2rem;
+    color: #ef962d;
+  }
+  
+
 
 .chair1{
   width:30%;
@@ -166,26 +173,49 @@ table {
   margin-left: 5%;
 }
 
-.price_heading{
-  margin-left: 5%;
-  margin-bottom: 5%;
-}
 
-#now-showing{
-  height: 20rem;
+#now-showing1{
   width: 20rem;
-  padding: 5rem;
-  border: 0.5rem solid gray;
-  margin: 0;
-};
-
-#now-showing-heading{
+  height: 20rem;
+  border: 0.2rem solid black ;
   margin-left: 5%;
-  margin-right: 5%;
-  padding-right: 10%;
-  padding-left: 10%;
+  position: absolute;
 };
 
- #movie-poster-text{
-float: right;
+
+.now-showing2{
+  width: 20rem;
+  height: 20rem;
+  border: 0.2rem solid black ;
+  position: absolute;
+
 };
+
+
+#now-showing3{
+  
+  width: 20rem;
+  height: 20rem;
+  border: 0.2rem solid #ef962d ;
+
+};
+
+
+#now-showing4{
+  
+  width: 20rem;
+  height: 20rem;
+  border: 0.2rem solid #ef962d ;
+ 
+};
+
+.img2{
+  left: 40rem;
+};
+
+#joker-poster{
+  border: #4CAF50 solid 1rem;
+
+
+};
+
