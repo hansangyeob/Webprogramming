@@ -16,7 +16,7 @@
 
 em,strong
 {
-  color:#ef962d;
+  color: royalblue;
 }
 
 h1{
@@ -88,8 +88,8 @@ body,html{
   }
 
   .parallax1 {
-   background-image: url(../a2/img/cgv3.jpg);
-   min-height: 80%;
+   background-image: url(../a2/img/sky.jpg);
+   min-height: 70%;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -99,7 +99,7 @@ body,html{
 
 .parallax2{
 height:1100px;
-font-size:1rem
+/*font-size:1rem*/
 }
 
 #about_us{
@@ -116,25 +116,27 @@ h2{
     margin-bottom: 5%;
     font-style: italic;
     font-size: 2rem;
-    color: #ef962d;
+    color:royalblue;
   }
   
 
 
 .chair1{
-  width:30%;
-  height: 30%;
-  border-radius: 30%;
+  margin-top: 3rem;
+  width:20rem;
+  height: 20rem;
+  border-radius: 10%;
   border: solid;
-  border-color: black;
+  border-color: gray;
 }
 
 .chair2{
-  width:30%;
-  height: 30%;
-  border-radius: 30%;
+  margin-left: 5rem;
+  width:20rem;
+  height: 20rem;
+  border-radius: 10%;
   border: solid;
-  border-color: black;
+  border-color: gray;
 }
 
 
@@ -168,54 +170,102 @@ table, th, td {
   text-align: center;
 }
 
+
+
+
 table {
   border-spacing: 0.1rem;
   margin-left: 5%;
 }
 
 
+
+
+
+.parallax2 .now-showing1 img
+{ 
+    float: left;
+    position: relative;
+    top: 100%;
+
+}
+h3{
+  position: relative;
+  left: 20rem;
+  bottom: 15rem;
+  font-style: italic;
+ 
+}
+
+h4{
+  position: relative;
+  bottom: 10rem;
+  left: 20rem;
+  bottom: 15rem;
+  font-weight: 500;
+}
+
+.poster{
+  position: relative;
+  top: 2rem;
+  left: 1rem;
+}
+
+.movietime-table{
+
+}
+
 #now-showing1{
-  width: 20rem;
-  height: 20rem;
-  border: 0.2rem solid black ;
+  border:  solid;
   margin-left: 5%;
-  position: absolute;
-};
-
-
-.now-showing2{
-  width: 20rem;
+  border-color: royalblue;
+  width: 30rem;
+  border-radius: 3%;
   height: 20rem;
-  border: 0.2rem solid black ;
-  position: absolute;
 
-};
+}
 
+
+#now-showing2{
+  border:  solid;
+  margin-left: 5%;
+  border-color: royalblue;
+  width: 30rem;
+  border-radius: 3%;
+  position: relative;
+  left: 40rem;
+  bottom: 20rem;
+  height: 20rem;
+
+
+}
 
 #now-showing3{
-  
-  width: 20rem;
+  border:  solid;
+  margin-left: 5%;
+  border-color: royalblue;
+  width: 30rem;
+  border-radius: 3%;
+  position: relative;
+  bottom: 15rem;
   height: 20rem;
-  border: 0.2rem solid #ef962d ;
 
-};
-
+}
 
 #now-showing4{
-  
-  width: 20rem;
-  height: 20rem;
-  border: 0.2rem solid #ef962d ;
- 
-};
-
-.img2{
+  border:  solid;
+  margin-left: 5%;
+  border-color: royalblue;
+  width: 30rem;
+  border-radius: 3%;  
+  position: relative;
+  bottom: 35rem;
   left: 40rem;
-};
+  height: 20rem;
 
-#joker-poster{
-  border: #4CAF50 solid 1rem;
+ 
+}
 
 
-};
+
 
