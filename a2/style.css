@@ -98,7 +98,7 @@ body,html{
 }
 
 .parallax2{
-height:1100px;
+height:78rem;
 /*font-size:1rem*/
 }
 
@@ -128,15 +128,30 @@ h2{
   border-radius: 10%;
   border: solid;
   border-color: gray;
+  margin-right: 1rem;
+}
+
+.chair-name1{
+  position: relative;
+  top:19rem;
+
 }
 
 .chair2{
+  margin-top: 3rem;
   margin-left: 5rem;
   width:20rem;
   height: 20rem;
   border-radius: 10%;
   border: solid;
   border-color: gray;
+  margin-right: 1rem;
+}
+
+.chair-name2{
+  position: relative;
+  top:19rem;
+
 }
 
 
@@ -269,7 +284,7 @@ h4{
   border-radius: 3%;
   height: 20rem;
   position: relative;
-  top: 10rem;
+
   background-color: #ecfbfc;
 
 }
@@ -282,7 +297,7 @@ h4{
   border-radius: 3%;  
   height: 20rem;
   position: relative;
-  top: 10rem;
+
   background-color: #ecfbfc;
  
 }
@@ -300,6 +315,7 @@ h4{
   flex-wrap: wrap;
   flex-direction:row;
   height: 14rem;
+  padding-top: 10rem;
   
 }
 
@@ -311,4 +327,61 @@ h4{
 @media screen and (max-width: 54rem) 
 {
   .flex { height: auto; }
+}
+
+
+.synopsis-border{
+  border:0.1rem solid ;
+  border-color: royalblue;
+  margin-left: 5rem;
+  padding: 1rem;
+  
+}
+
+.s-title{
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.s-Plot_description{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.s-booking{
+  margin-top: 10rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.button {
+  background-color: rgb(83, 134, 201);
+  border: none;
+  color: white;
+  padding: 16px 32px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid rgb(83, 134, 201);
+  margin-bottom: 3rem;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.joker-trailer{
+  float: right;
+  position: relative;
+  bottom: 5rem;
 }
