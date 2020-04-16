@@ -133,7 +133,9 @@ h2{
 
 .chair-name1{
   position: relative;
-  top:19rem;
+  top:23rem;
+  right: 10rem;
+  font-weight: bold;
 
 }
 
@@ -150,17 +152,14 @@ h2{
 
 .chair-name2{
   position: relative;
-  top:19rem;
+  top:23rem;
+  right: 10rem;
+  font-weight: bold;
+
 
 }
 
 
-.video1{
-  position:relative;
-  width:30%;
-  height:30%;
-  
-}
 
 
 
@@ -334,7 +333,7 @@ h4{
   border:0.1rem solid ;
   border-color: royalblue;
   margin-left: 5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   
 }
 
@@ -347,8 +346,13 @@ h4{
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+.s-plot_description_content{
+  line-height: 2rem;
+
+}
 .s-booking{
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-size: 1.5rem;
   font-weight: 400;
 }
