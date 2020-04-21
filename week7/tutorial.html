@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input:invalid{
+        border: crimson 2px solid;
+    }
+</style>
+<body>
+    <form>
+        <label for="username">Username <i>(letters and numbers only)</i></label>
+        <input type="username" id="username" pattern="[A-Za-z0-9]+" required
+        oninvalid="alert('error!')">
+        <input type="submit" value="Submit">
+
+
+        <!--
+    ^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$
+^:start of string
+$: end of string
+\(04\)|04|\+614):
+|: or
+\+ : plus
+(04) 04 +614 ( country code)
+
+[ ]?\d{4}[ ]?\d{4}
+[ ]?: user need to put information
+\d: digit 0~9
+{4}: 4 digit
+
+so it will be like: xxxx xxxx
+-->
+
+<!--
+    ^ {[a-zA-Z ?\-.']1,100}$
+{1,100}: chracter limit 1~100
+[a-zA-Z ?\-.'']: it can be ethier a-z and A-Z, 
+space(no more than one), ., ''
+ ?: ? belongs to space infront of ?
+ \-: \ belongs to -
+-->
+
+    </form>
+</body>
+</html>
