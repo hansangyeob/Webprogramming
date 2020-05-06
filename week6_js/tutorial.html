@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <script>
+    function clickHandler(){
+      console.log ('Mouse click detected')
+    }
+  </script>
+</head>
+
+<!-- event handler like onlick
+  <input onclick = "alert('Mouse click detected')" type="button" value="display the date">
+   -->
+
 <body>
-
-<h1>The onclick Event</h1>
-
-<p>The onclick event is used to trigger a function when an element is clicked on.</p>
-
-<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
-
-<button onclick="myFunction()">Click me</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}
-function myFunction() {
-  document.getElementById("demo").innerHTML = "and you?";
-}
-</script>
-
+  <h1>What's the date?</h1>
+  <input type="text" value="click the button">
+  
+  <input onclick = "clickHandler();"
+   type= "button" value="display the date">
+  <p>
+    &copy; Copyright Dare Awareness Inc 1900 - 2020
+  </p>
+  <h6>Ask you about the benefits of dynamic dating</h6>
 </body>
+
 </html>
