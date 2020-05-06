@@ -5,12 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  
-  <script>
+  <script src="tools1.js"></script>
+ <!-- -->
+ <script>
     function clickHandler(){
-      console.log ('Mouse click detected')
+     document.getElementById("date").value = Date();
+
+    
+    }
+
+    
+    function clickHandler3(){
+      console.log(document.body.children[3]);
+    }
+
+    function clickHandler4(){
+      console.log(document.getElementById('date'));
     }
   </script>
+
+
 </head>
 
 <!-- event handler like onlick
@@ -18,15 +32,22 @@
    -->
 
 <body>
-  <h1>What's the date?</h1>
-  <input type="text" value="click the button">
+  <h1 onclick="clickHandler1();">What's the date?</h1>
+  <h2 onclick="clickHandler3();"> Click me!</h2>
+  <input id="date" onkeypress="clickHandler4();" type="text" value="click the button">
   
   <input onclick = "clickHandler();"
    type= "button" value="display the date">
   <p>
-    &copy; Copyright Dare Awareness Inc 1900 - 2020
+    &copy; Copyright Dare Awareness Inc 1900 -
+    <script>
+      var currentDate = new Date();
+      document.write(currentDate.getFullYear());
+    </script>
   </p>
+ 
   <h6>Ask you about the benefits of dynamic dating</h6>
+
 </body>
 
 </html>
