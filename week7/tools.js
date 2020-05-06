@@ -10,13 +10,12 @@ function calcuatePrice2(){
 function clickP3(){
     alert("Calculate Price3")
 }
+
 var myButton= document.getElementById("price2");
 myButton.onclick = calcuatePrice2;
 
-
 var myButton= document.getElementById("price3");
-myButton.addEventListener("click",calculatePrice);
-myButton.addEventListener("click",calculatePrice2);
+myButton.addEventListener("click",calcuatePrice2);
 
-var myP3 = document.getElementById("p3");
-myp3.addEventListener("click",clickP3);
+var myp3 = document.getElementById("p3");
+myp3.addEventListener("click",clickP3,true);

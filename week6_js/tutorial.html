@@ -38,14 +38,15 @@
   
   <input onclick = "clickHandler();"
    type= "button" value="display the date">
-  <p>
+  <p id="copyright">
     &copy; Copyright Dare Awareness Inc 1900 -
-    <script>
-      var currentDate = new Date();
-      document.write(currentDate.getFullYear());
-    </script>
   </p>
- 
+  
+  <script>
+    var currentDate = new Date();
+    document.getElementById('copyright').innerHTML
+    += currentDate.getFullYear();
+  </script> 
   <h6>Ask you about the benefits of dynamic dating</h6>
 
 </body>
