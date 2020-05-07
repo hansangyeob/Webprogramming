@@ -1,21 +1,9 @@
 
-function calcuatePrice(){
-    alert("Calculate Price")
+function clickp3(){
+    alert("click p3 ditected");
+    event.stopImmediatePropagation();
+    /* stopImmediatePropagation it will stop after everything after this function*/
 }
 
-function calcuatePrice2(){
-    alert("Calculate Price2")
-}
-
-function clickP3(){
-    alert("Calculate Price3")
-}
-
-var myButton= document.getElementById("price2");
-myButton.onclick = calcuatePrice2;
-
-var myButton= document.getElementById("price3");
-myButton.addEventListener("click",calcuatePrice2);
-
-var myp3 = document.getElementById("p3");
-myp3.addEventListener("click",clickP3,true);
+var myP3 = document.getElementById("p3");
+myP3.addEventListener("click",clickp3,true);

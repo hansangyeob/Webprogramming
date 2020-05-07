@@ -21,3 +21,9 @@ window.addEventListener("scroll", event => {
     }
   });
 });
+
+
+/* buttons on syn 
+var date1 = new Date("2020-05-06T16:00");
+document.getElementById("button1").innerHTML = date1;
+*/

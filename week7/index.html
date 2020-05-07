@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="tools.js"></script>
+    <style>
+        input[pattern]:invalid{
+            border: 2px red solid;
+            background-color: royalblue;
+        }
+    </style>
+
 </head>
 <!--  try to use defer. it will make it avaliable for you to 
 put the JS fuctions on the head-->
 
 <body>
-<input type="button" id="price" value="calculate" onclick="calcuatePrice(); calcuatePrice2();">
-
-    <p>
-        <input  id="price2" type="button" value="Calculate 2" onclick="setTimeout(calcuatePrice2,5000);">
-    </p>
-    <p>
-        <input id="price3" type="button" value="Calculate 3" onclick="calcuatePrice2();">
-    </p>
-
     <p id="p3">
-        <input id="price3" type="button" value="Calculate 3" onclick="calcuatePrice2();">
+        <input type="button" id="price3" value="Calculate 3">
     </p>
 
-
+    <p>
+        <input type="text" pattern="Steve [a-zA-Z ]+">
+    </p>
 </body>
 
 </html>
