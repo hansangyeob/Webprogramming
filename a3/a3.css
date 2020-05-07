@@ -441,3 +441,64 @@ h4{
 }
 
 
+.bookinng_form{
+  border: darkkhaki solid ;
+  margin-left: 5rem;
+  padding: 0.5rem;
+  width: 50%;
+}
+
+input[pattern]:invalid {
+  border:2px red solid;
+  background-color:#fee;
+}
+
+.standard{
+  position: unset;
+  border: darkkhaki solid 0.2rem;
+  width: 35%;
+  height: 50%;
+  margin: 3rem;
+  padding: 0.5rem;
+}
+
+.first_class{
+  position: unset;
+  top:5rem;
+  border: darkkhaki solid 0.2rem;
+  width: 35%;
+  height: 60%;
+  margin: 3rem;
+  padding: 0.5rem;
+}
+
+.personal_infor{
+  position: initial;
+  border: darkkhaki solid 0.2rem;
+  width: 35%;
+  height: 60%;
+  margin: 3rem;
+  padding: 0.5rem;
+  left: 10rem;
+  top: 30rem;
+
+}
+
+h5{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+h6{
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.totalPrice{
+
+}
+
+.order_button{
+
+}

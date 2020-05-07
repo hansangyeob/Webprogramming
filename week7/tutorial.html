@@ -1,3 +1,5 @@
+<!--
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +21,7 @@
         <input type="submit" value="Submit">
 
 
-        <!--
+    
     ^(\(04\)|04|\+614)[ ]?\d{4}[ ]?\d{4}$
 ^:start of string
 $: end of string
@@ -43,8 +45,57 @@ so it will be like: xxxx xxxx
 space(no more than one), ., ''
  ?: ? belongs to space infront of ?
  \-: \ belongs to -
--->
+
 
     </form>
 </body>
+</html>
+-->
+
+<html>
+
+<head>
+    <title>Main Page</title>
+</head>
+
+<body>
+    <form action="engine.asp" method="post" name="form1" id="form1">
+        <table width="50%" border="0">
+            <tr>
+                <td width="50%">Team Name:</td>
+                <td width="50%"><label>
+                        <input type="text" name="TeamName" id="TeamName" />
+                    </label></td>
+            </tr>
+            <tr>
+                <td width="50%">Winner?:</td>
+                <td width="50%"><label>
+                        <input type="text" name="WinningTeam" id="WinningTeam" />
+                    </label></td>
+            </tr>
+            <tr>
+                <td width="50%">Total Goals?:</td>
+                <td width="50%"><label>
+                        <input type="text" name="TotalGoals" id="TotalGoals" />
+                    </label></td>
+            </tr>
+        </table>
+        <input type="submit" id="btnSubmit" class="button" value="Submit" />
+    </form>
+    </div>
+    <script>
+        window.onload = function () {
+            var myInterval = setInterval(checkTime, 1000);
+        }
+        function checkTime() {
+            var now = new Date();
+            var dateLimit = new Date("2018-01-07T15:00:00")
+            if (now > dateLimit) {
+                clearInterval(myInterval);
+                document.getElementById("btnSubmit").disabled = true;
+            }
+        }
+    </script>
+</body>
+
 </html>

@@ -36,6 +36,7 @@
             <li><a href="#prices">Prices</a></li>
             <li><a href="#now_showing">Now showing</a></li>
             <li><a href="#synopsis">Synopsis</a></li>
+            <li><a href="#booking_form1">Booking</a></li>
         </ul>
     </nav>
 
@@ -236,7 +237,7 @@
             </p>
             <p class="s-booking">Make a Booking:</p>
             <p> </p>
-            <button id="button1">06/May - 6pm</button>
+            <button id="button1" Date>06/May - 6pm</button>
             <button id="button1">13/May - 4pm</button>
             <button id="button1">25/May - 7pm</button>
             <button id="button1">13/June - 2pm</button>
@@ -247,6 +248,94 @@
 
     <div class="parallax1"></div>
 
+
+    <!-- This is for the booking form    -->
+
+    <div class="parallax1"></div>
+
+    <section class="parallax2" id="booking_form1">
+        <div>
+            <h2>Booking form</h2>
+            <div class="bookinng_form">
+                <h5>
+                    Joker
+                    <select name="Time" id="">
+                        <option value="06/May - 6pm">06/May - 6pm</option>
+                        <option value="13/May - 4pm">13/May - 4pm</option>
+                        <option value="25/May - 7pm">25/May - 7pm</option>
+                        <option value="13/June - 2pm">13/June - 2pm</option>
+                    </select>
+                </h5>
+
+
+                <div class="standard">
+                    <h6>Standard</h6>
+
+                    <p>
+                        Adults<input type="number">
+                    </p>
+                    <span> .</span>
+                    <p>
+                        Concession<input type="number">
+                    </p>
+                    <span> .</span>
+                    <p>
+                        Children<input type="number">
+                    </p>
+                </div>
+
+                <div class="first_class">
+                    <h6>First Class</h6>
+                    <p>
+                        Adults <input type="number">
+                    </p>
+                    <span> .</span>
+                    <p>
+                        Concession<input type="number">
+                    </p>
+                    <span> .</span>
+                    <p>
+                        Children <input type="number">
+                    </p>
+                </div>
+
+                <div class="personal_infor">
+                    <h6>Personal Information</h6>
+                    <p>
+                        Name <input type="text" pattern='[a-zA-Z ]+'>
+                    </p>
+                    <span> .</span>
+                    <p>
+                        Email <input type="email">
+                    </p>
+                    <span> .</span>
+                    <p>
+                        Mobile <input type="tel">
+                    </p>
+                    <span> .</span>
+                    <p>
+                        Credit Card <input type="text" pattern='[0-10 ]+'>
+                    </p>
+                    <span> .</span>
+                    <p>
+                        Expiry <input type="date">
+                    </p>
+                </div>
+
+                <div id="totalPrice">
+                    Total$<input type="text">
+                </div>
+
+                <div id="order_button">
+                    <input type="button" value="order">
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
 
 
     <!-- footer from here   -->
