@@ -35,3 +35,8 @@ function movieSchdule() {
       document.getElementById("button1").disabled = true;
   }
 }
+
+function adultNum(){
+var 
+
+}

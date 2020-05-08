@@ -51,7 +51,7 @@ space(no more than one), ., ''
 </body>
 </html>
 -->
-
+<!--
 <html>
 
 <head>
@@ -98,4 +98,80 @@ space(no more than one), ., ''
     </script>
 </body>
 
+</html>
+
+-->
+
+<!--
+ <html>
+
+
+<head>
+    
+  
+    
+    <script type="text/javascript" src="tools(t).js"></script>
+    
+    
+    <script type="text/javascript">
+          function displayDate() {
+                 document.getElementById("date").value = new Date();
+            
+        }
+          </script>
+     </head>
+
+
+<body>
+     <h1>What's the Date?</h1>
+     <p><input type="text" id="date" name="date" value="Click the button" />
+       
+      
+         <button onclick="displayDate()">Display Date</button></p>
+     <p>&copy; Copyright Date Awareness Inc 1990 -
+        
+        <script type="text/javascript">
+                /* Inline JS */
+            	      var d = new Date();
+            	      document.write(d.getFullYear());
+            	    </script>
+        23. <noscript>2001</noscript>
+        24. </p>
+    25. <h6>Ask us about the benefits of dynamic dating</h6>
+    26. </body>
+27.
+
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Tony</p>
+    <input type="text" onblur="myfunction1()">
+
+    <button onclick="myfunction1()"> Click here to make toUpperCase</button>
+
+    <script>
+        function myFunction(){
+            document.getElementById("demo").innerHTML = "hello!";
+        } 
+
+        function hello(){
+            document.getElementById("demo").innerHTML +="han han"
+        }
+        
+        function myfunction1() {
+            var x = document.getElementById("tony1");
+           x.value = x.value.toUpperCase();
+        }
+
+    </script>
+
+</body>
 </html>
