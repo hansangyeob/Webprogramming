@@ -120,13 +120,13 @@ nav a{
 
 
 nav ul li a.current {
-    background:royalblue;
+    background:orangered;
     border-radius: 10%;
 }
 
 
 li a:active{
-    background-color: orange;
+    background-color: royalblue;
     border-radius: 10%;
 }
 
@@ -382,7 +382,7 @@ h4{
   
 }
 
-.s-title{
+#s-title{
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
@@ -392,7 +392,7 @@ h4{
   font-weight: 500;
 }
 
-.s-plot_description_content{
+#s-plot_description_content{
   line-height: 2rem;
 
 }
@@ -418,7 +418,7 @@ h4{
   
 }
 
-#button1 {
+#button11 {
   font-weight: bolder;
   background-color: rgb(165, 165, 165); 
   color: black; 
@@ -429,9 +429,77 @@ h4{
   margin-top: 1rem;
 }
 
-#button1:hover {
+#button11:hover {
   background-color: #4CAF50;
   color: white;
+}
+
+#button11:disabled{
+  background:red;
+  border: pink solid;
+}
+
+#button12 {
+  font-weight: bolder;
+  background-color: rgb(165, 165, 165); 
+  color: black; 
+  border: 2px solid rgb(83, 134, 201);
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+#button12:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#button12:disabled{
+  background:red;
+  border: pink solid;
+}
+
+#button13 {
+  font-weight: bolder;
+  background-color: rgb(165, 165, 165); 
+  color: black; 
+  border: 2px solid rgb(83, 134, 201);
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+#button13:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#button13:disabled{
+  background:red;
+  border: pink solid;
+}
+
+#button14 {
+  font-weight: bolder;
+  background-color: rgb(165, 165, 165); 
+  color: black; 
+  border: 2px solid rgb(83, 134, 201);
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+#button14:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#button14:disabled{
+  background:red;
+  border: pink solid;
 }
 
 .joker-trailer{

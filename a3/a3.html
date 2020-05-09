@@ -156,7 +156,8 @@
 
             <div id="now-showing1">
                 <p>
-                    <a href="#synopsis"> <input id="booking_joker_button" type="button" value="More detail"> </a>
+                    <a href="#synopsis"> 
+                    <input onclick = "booking_joker()" id="booking_joker_button" type="button" value="Click here for detail"> </a>
                 </p>
                 <div>
                     <img class="poster" src="../a2/img/joker-poster.jpg" alt="joker poster" width="250rem"
@@ -164,25 +165,26 @@
                 </div>
                 <div class="movie-timetable">
                     <h3>Joker</h3>
-                    <h4>13/Apr - 4pm</h4>
-                    <h4>13/Apr - 6pm</h4>
-                    <h4>13/Apr - 8pm</h4>
-                    <h4>13/Apr - 9pm</h4>
+                    <h4>06/May - 6pm</h4>
+                    <h4>13/May - 4pm</h4>
+                    <h4>25/May - 7pm</h4>
+                    <h4>13/June - 2pm</h4>
                 </div>
             </div>
 
             <div id="now-showing2">
                 <p>
-                    <a href="#synopsis"> <input id="booking_joker_button" type="button" value="More detail"> </a>
+                    <a href="#synopsis">
+                    <input onclick="booking_terminator()" id="booking_joker_button" type="button" value="Click here for detail"> </a>
                 </p>
                 <img class="poster" src="../a2/img/terminator-poster.jpg" alt="terminator poster" width="250rem"
                     height="250rem">
                 <div class="movie-timetable">
                     <h3>Terminator</h3>
-                    <h4>13/Apr - 4pm</h4>
-                    <h4>13/Apr - 6pm</h4>
-                    <h4>13/Apr - 8pm</h4>
-                    <h4>13/Apr - 9pm</h4>
+                    <h4>06/May - 6pm</h4>
+                    <h4>13/May - 4pm</h4>
+                    <h4>25/May - 7pm</h4>
+                    <h4>13/June - 2pm</h4>
                 </div>
             </div>
         </div>
@@ -190,31 +192,33 @@
         <div class="flex2">
             <div id="now-showing3">
                 <p>
-                    <a href="#synopsis"> <input id="booking_joker_button" type="button" value="More detail"> </a>
+                    <a href="#synopsis">
+                    <input onclick = "booking_black_panther()"id="booking_joker_button" type="button" value="Click here for detail"> </a>
                 </p>
                 <img class="poster" src="../a2/img/blackpanther-poster.jpg" alt="black panther poster" width="250rem"
                     height="250rem">
                 <div class="movie-timetable">
                     <h3>black panther</h3>
-                    <h4>13/Apr - 4pm</h4>
-                    <h4>13/Apr - 6pm</h4>
-                    <h4>13/Apr - 8pm</h4>
-                    <h4>13/Apr - 9pm</h4>
+                    <h4>06/May - 6pm</h4>
+                    <h4>13/May - 4pm</h4>
+                    <h4>25/May - 7pm</h4>
+                    <h4>13/June - 2pm</h4>
                 </div>
             </div>
 
 
             <div id="now-showing4">
                 <p>
-                    <a href="#synopsis"> <input id="booking_joker_button" type="button" value="More detail"> </a>
+                    <a href="#synopsis">
+                    <input onclick="booking_us()" id="booking_joker_button" type="button" value="Click here for detail"> </a>
                 </p>
                 <img class="poster" src="../a2/img/usposter.jpg" alt="us-poster" width="250rem" height="250rem">
                 <div class="movie-timetable">
                     <h3>Us</h3>
-                    <h4>13/Apr - 4pm</h4>
-                    <h4>13/Apr - 6pm</h4>
-                    <h4>13/Apr - 8pm</h4>
-                    <h4>13/Apr - 9pm</h4>
+                    <h4>06/May - 6pm</h4>
+                    <h4>13/May - 4pm</h4>
+                    <h4>25/May - 7pm</h4>
+                    <h4>13/June - 2pm</h4>
                 </div>
             </div>
         </div>
@@ -233,24 +237,24 @@
         <h2>Synopsis</h2>
 
         <div class="synopsis-joker">
-            <p class="s-title">Joker <span>18+</span></p>
+            <p id="s-title">Movie title</p>
             <p class="s-Plot_description">Plot description</p>
+<!--
             <iframe class="joker-trailer" width="420" height="315" src="http://www.jokermovie.net/">
-            </iframe>
-            <p class="s-plot_description_content">In 1981, party clown and aspiring stand-up comedian Arthur Fleck lives
-                with his mother, Penny,
-                in Gotham City. Gotham is rife with crime and unemployment, leaving swathes of the population
-                disenfranchised and impoverished. Arthur suffers from a medical disorder that causes him to laugh
-                at inappropriate times; he depends on social services for medication. After a gang of delinquents
-                attacks Arthur in an alley, his co-worker, Randall, gives him a gun for protection. Arthur meets his
-                neighbor, single mother Sophie Dumond, and invites her to his upcoming stand-up routine at a nightclub
-            </p>
+            </iframe>            
+-->
+            <p id="s-plot_description_content">. 
+                <br>
+                <br>
+                <br>
+                <br>
+             </p>
             <p class="s-booking">Make a Booking:</p>
             <p> </p>
-            <button id="button1" Date>06/May - 6pm</button>
-            <button id="button1">13/May - 4pm</button>
-            <button id="button1">25/May - 7pm</button>
-            <button id="button1">13/June - 2pm</button>
+            <button onclick="first_booking_button(),error_message()" id="button11">06/May - 6pm</button>
+            <button onclick="second_booking_button()" id="button12" ><a href="#booking_form1"> 13/May - 4pm</a> </button>
+            <button onclick="third_booking_button()" id="button13">25/May - 7pm</button>
+            <button onclick="forth_booking_button()" id="button14">13/June - 2pm</button>
         </div>
 
 
