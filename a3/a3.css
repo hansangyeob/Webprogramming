@@ -282,7 +282,7 @@ h4{
 #now-showing1{
   border:  solid;
   margin-left: 5%;
-  border-color: #120136;
+  border-color: darkkhaki;
   width: 30rem;
   border-radius: 3%;
   height: 20rem;
@@ -304,11 +304,11 @@ h4{
 #now-showing2{
   border:  solid;
   margin-left: 5%;
-  border-color: royalblue;
+  border-color: darkkhaki;
   width: 30rem;
   height: 20rem;
   border-radius: 3%;
-  background-color: #ecfbfc;
+  background-color: #f0f0f0;
   /*
   position: relative;
   left: 40rem;
@@ -321,24 +321,24 @@ h4{
 #now-showing3{
   border:  solid;
   margin-left: 5%;
-  border-color: royalblue;
+  border-color: darkkhaki;
   width: 30rem;
   border-radius: 3%;
   height: 20rem;
   position: unset;
-  background-color: #ecfbfc;
+  background-color: #f0f0f0;
 
 }
 
 #now-showing4{
   border:  solid;
   margin-left: 5%;
-  border-color: royalblue;
+  border-color: darkkhaki;
   width: 30rem;
   border-radius: 3%;  
   height: 20rem;
   position: unset;
-  background-color: #ecfbfc;
+  background-color: #f0f0f0;
  
 }
 
@@ -456,22 +456,28 @@ input[pattern]:invalid {
 .standard{
   position: unset;
   border: darkkhaki solid 0.2rem;
-  width: 35%;
-  height: 50%;
+  width: 50%;
+  height: 10rem;
   margin: 3rem;
   padding: 0.5rem;
 }
-
+.standard p {
+  float: right;
+  position: unset;
+}
 .first_class{
   position: unset;
   top:5rem;
   border: darkkhaki solid 0.2rem;
-  width: 35%;
-  height: 60%;
+  width: 50%;
+  height: 10rem;
   margin: 3rem;
   padding: 0.5rem;
 }
-
+.first_class p {
+  float: right;
+  position: unset;
+}
 .personal_infor{
   position: initial;
   border: darkkhaki solid 0.2rem;

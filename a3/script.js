@@ -28,6 +28,8 @@ var date1 = new Date("2020-05-06T16:00");
 document.getElementById("button1").innerHTML = date1;
 */
 
+
+/* 
 function movieSchdule() {
   var now = new Date();
   var dateLimit = new Date("2020-06-10T15:00:00")
@@ -40,3 +42,5 @@ function adultNum(){
 var 
 
 }
+
+*/

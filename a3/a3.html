@@ -9,7 +9,7 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="../a3/a3.css">
-
+    
     <!--
     <script src='../wireframe.js'></script>
 -->
@@ -172,6 +172,9 @@
             </div>
 
             <div id="now-showing2">
+                <p>
+                    <a href="#synopsis"> <input id="booking_joker_button" type="button" value="More detail"> </a>
+                </p>
                 <img class="poster" src="../a2/img/terminator-poster.jpg" alt="terminator poster" width="250rem"
                     height="250rem">
                 <div class="movie-timetable">
@@ -186,6 +189,9 @@
 
         <div class="flex2">
             <div id="now-showing3">
+                <p>
+                    <a href="#synopsis"> <input id="booking_joker_button" type="button" value="More detail"> </a>
+                </p>
                 <img class="poster" src="../a2/img/blackpanther-poster.jpg" alt="black panther poster" width="250rem"
                     height="250rem">
                 <div class="movie-timetable">
@@ -197,7 +203,11 @@
                 </div>
             </div>
 
+
             <div id="now-showing4">
+                <p>
+                    <a href="#synopsis"> <input id="booking_joker_button" type="button" value="More detail"> </a>
+                </p>
                 <img class="poster" src="../a2/img/usposter.jpg" alt="us-poster" width="250rem" height="250rem">
                 <div class="movie-timetable">
                     <h3>Us</h3>
@@ -271,17 +281,16 @@
                 <div class="standard">
                     <h6>Standard</h6>
 
+                    <p> 
+                        Adults  <input type="number" oninput="adultNum()">
+                    </p> 
+                    <br><br>
                     <p>
-                        Adults
-                        <input type="number" oninput="adultNum()">
+                        Concession  <input type="number">
                     </p>
-                    <span> .</span>
+                    <br><br>
                     <p>
-                        Concession<input type="number">
-                    </p>
-                    <span> .</span>
-                    <p>
-                        Children<input type="number">
+                        Children  <input type="number">
                     </p>
                 </div>
 
@@ -290,11 +299,11 @@
                     <p>
                         Adults <input type="number">
                     </p>
-                    <span> .</span>
+                    <br><br>
                     <p>
-                        Concession<input type="number">
+                        Concession  <input type="number">
                     </p>
-                    <span> .</span>
+                    <br><br>
                     <p>
                         Children <input type="number">
                     </p>
@@ -305,19 +314,19 @@
                     <p>
                         Name <input type="text" pattern='[a-zA-Z ]+'>
                     </p>
-                    <span> .</span>
+                    <br>
                     <p>
                         Email <input type="email">
                     </p>
-                    <span> .</span>
+                    <br>
                     <p>
                         Mobile <input type="tel">
                     </p>
-                    <span> .</span>
+                    <br>
                     <p>
                         Credit Card <input type="text" pattern='[0-10 ]+'>
                     </p>
-                    <span> .</span>
+                    <br>
                     <p>
                         Expiry <input type="month">
                     </p>
