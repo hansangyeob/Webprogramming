@@ -9,7 +9,7 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="../a3/a3.css">
-    
+
     <!--
     <script src='../wireframe.js'></script>
 -->
@@ -156,8 +156,9 @@
 
             <div id="now-showing1">
                 <p>
-                    <a href="#synopsis"> 
-                    <input onclick = "booking_joker()" id="booking_joker_button" type="button" value="Click here for detail"> </a>
+                    <a href="#synopsis">
+                        <input onclick="booking_joker()" id="booking_joker_button" type="button"
+                            value="Click here for detail"> </a>
                 </p>
                 <div>
                     <img class="poster" src="../a2/img/joker-poster.jpg" alt="joker poster" width="250rem"
@@ -175,7 +176,8 @@
             <div id="now-showing2">
                 <p>
                     <a href="#synopsis">
-                    <input onclick="booking_terminator()" id="booking_joker_button" type="button" value="Click here for detail"> </a>
+                        <input onclick="booking_terminator()" id="booking_joker_button" type="button"
+                            value="Click here for detail"> </a>
                 </p>
                 <img class="poster" src="../a2/img/terminator-poster.jpg" alt="terminator poster" width="250rem"
                     height="250rem">
@@ -193,7 +195,8 @@
             <div id="now-showing3">
                 <p>
                     <a href="#synopsis">
-                    <input onclick = "booking_black_panther()"id="booking_joker_button" type="button" value="Click here for detail"> </a>
+                        <input onclick="booking_black_panther()" id="booking_joker_button" type="button"
+                            value="Click here for detail"> </a>
                 </p>
                 <img class="poster" src="../a2/img/blackpanther-poster.jpg" alt="black panther poster" width="250rem"
                     height="250rem">
@@ -210,7 +213,8 @@
             <div id="now-showing4">
                 <p>
                     <a href="#synopsis">
-                    <input onclick="booking_us()" id="booking_joker_button" type="button" value="Click here for detail"> </a>
+                        <input onclick="booking_us()" id="booking_joker_button" type="button"
+                            value="Click here for detail"> </a>
                 </p>
                 <img class="poster" src="../a2/img/usposter.jpg" alt="us-poster" width="250rem" height="250rem">
                 <div class="movie-timetable">
@@ -239,22 +243,22 @@
         <div class="synopsis-joker">
             <p id="s-title">Movie title</p>
             <p class="s-Plot_description">Plot description</p>
-<!--
+            <!--
             <iframe class="joker-trailer" width="420" height="315" src="http://www.jokermovie.net/">
             </iframe>            
 -->
-            <p id="s-plot_description_content">. 
+            <p id="s-plot_description_content">.
                 <br>
                 <br>
                 <br>
                 <br>
-             </p>
+            </p>
             <p class="s-booking">Make a Booking:</p>
             <p> </p>
             <button onclick="first_booking_button(),error_message()" id="button11">06/May - 6pm</button>
-            <button onclick="second_booking_button()" id="button12" ><a href="#booking_form1"> 13/May - 4pm</a> </button>
-            <button onclick="third_booking_button()" id="button13">25/May - 7pm</button>
-            <button onclick="forth_booking_button()" id="button14">13/June - 2pm</button>
+            <button onclick="second_booking_button()" id="button12"><a href="#booking_form1"> 13/May - 4pm</a> </button>
+            <button onclick="third_booking_button()" id="button13"><a href="#booking_form1">25/May - 7pm</a> </button>
+            <button onclick="forth_booking_button()" id="button14"><a href="#booking_form1"> 13/June - 2pm</a> </button>
         </div>
 
 
@@ -270,82 +274,176 @@
     <section class="parallax2" id="booking_form1">
         <div>
             <h2>Booking form</h2>
-            <div class="bookinng_form">
-                <h5>
-                    Joker
-                    <select name="Time" id="">
-                        <option value="06/May - 6pm">06/May - 6pm</option>
-                        <option value="13/May - 4pm">13/May - 4pm</option>
-                        <option value="25/May - 7pm">25/May - 7pm</option>
-                        <option value="13/June - 2pm">13/June - 2pm</option>
-                    </select>
-                </h5>
-
-
-                <div class="standard">
-                    <h6>Standard</h6>
-
-                    <p> 
-                        Adults  <input type="number" oninput="adultNum()">
-                    </p> 
-                    <br><br>
-                    <p>
-                        Concession  <input type="number">
-                    </p>
-                    <br><br>
-                    <p>
-                        Children  <input type="number">
-                    </p>
-                </div>
-
-                <div class="first_class">
-                    <h6>First Class</h6>
-                    <p>
-                        Adults <input type="number">
-                    </p>
-                    <br><br>
-                    <p>
-                        Concession  <input type="number">
-                    </p>
-                    <br><br>
-                    <p>
-                        Children <input type="number">
-                    </p>
-                </div>
-
-                <div class="personal_infor">
-                    <h6>Personal Information</h6>
-                    <p>
-                        Name <input type="text" pattern='[a-zA-Z ]+'>
-                    </p>
+            <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" target="_blank">
+                <div class="bookinng_form">
+                    <h5 id="s-title1">Movie title</h5> 
                     <br>
-                    <p>
-                        Email <input type="email">
-                    </p>
+                    <p id="movie_date_syn"> date</p>
                     <br>
-                    <p>
-                        Mobile <input type="tel">
-                    </p>
-                    <br>
-                    <p>
-                        Credit Card <input type="text" pattern='[0-10 ]+'>
-                    </p>
-                    <br>
-                    <p>
-                        Expiry <input type="month">
-                    </p>
-                </div>
+                    <!-- Moive ID -->
+                    <label for="Moive ID">Moive ID:</label>
+                    <input type="hidden" id="movie_id" name="movie[id]" patter="(ANM|ACT)">
+                    <br><br>
 
-                <div id="totalPrice">
-                    Total$<input type="text">
-                </div>
+                    <!-- Moive Day-->
+                    <label for="Moive Day">Moive Day:</label>
+                    <input type="hidden" id="movie_day" name="movie[day]" pattern="(MON| TUE| WED| THU| FRI| SAT| SUN)">
+                    <br><br>
 
-                <div id="order_button">
-                    <input type="button" value="order">
-                </div>
+                    <!-- Moive Hour-->
+                    <label for="Moive Hour">Moive Hour:</label>
+                    <input type="hidden" id="movie_hour" name="movie[hour]" pattern="(T12|T15| T18| T21)">
+                    <br><br>
 
-            </div>
+                    <div class="standard">
+                        <h6>Standard</h6>
 
+                        <!-- Standard Adult-->
+                        <label for="S_adult">Standard Adult:</label>
+                        <!--   <input type="select" id="S_adult" name="seats[STA]"> -->
+                        <select id="num_adult" id="S_adult" name="seats[STA]">
+                            <option value="Please Select">Please Select</option>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10 </option>
+                        </select>
+                        <br><br>
+
+                        <!-- Standard Concession-->
+                        <label for="S_concession">Standard Concession:</label>
+                        <!--       <input type="select" id="S_concession" name="seats[STP]"> -->
+                        <select id="num_concession_adult" name="seats[STP]">
+                            <option value="Please Select">Please Select</option>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10 </option>
+                        </select>
+                        <br><br>
+
+                        <!-- Standard Child-->
+                        <label for="S_child">Standard Child:</label>
+                        <!--   <input type="select" id="S_child" name="seats[STC]"> -->
+                        <select id="num_standard_child" name="seats[STC]">
+                            <option value="Please Select">Please Select</option>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10 </option>
+                        </select>
+                        <br><br>
+                    </div>
+
+                    <div class="first_class">
+                        <h6>First Class</h6>
+                        <!-- First Class Adult-->
+                        <label for="F_class_adult">First Class Adult:</label>
+                        <!--     <input type="select" id="F_class_adult" name="seats[FCA]">-->
+                        <select id="num_first_child" name="seats[FCA]">
+                            <option value="Please Select">Please Select</option>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10 </option>
+                        </select>
+                        <br><br>
+
+                        <!-- First Class Concession-->
+                        <label for="F_class_concession">First Class Concession:</label>
+                        <!--   <input type="select" id="F_class_concession" name="seats[FCP]">-->
+                        <select name="seats[FCP]" id="num_first_child">
+                            <option value="Please Select">Please Select</option>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10 </option>
+                        </select>
+                        <br><br>
+
+                        <!-- First Class Child-->
+                        <label for="F_class_child">First Class Child:</label>
+                        <!--    <input type="select" id="F_class_child" name="seats[FCC]"> -->
+                        <select name="seats[FCC]" id="num_first_child">
+                            <option value="Please Select">Please Select</option>
+                            <option value="1">1 </option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">5 </option>
+                            <option value="6">6 </option>
+                            <option value="7">7 </option>
+                            <option value="8">8 </option>
+                            <option value="9">9 </option>
+                            <option value="10">10 </option>
+                        </select>
+                        <br><br>
+                    </div>
+
+                    <div class="personal_infor">
+                        <h6>Personal Information</h6>
+                        <!-- Name-->
+                        <label for="Name">Name:</label>
+                        <input onblur = "protect()" type="text" id="name" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$">
+                        <br><br>
+
+                        <!-- Email-->
+                        <label for="email">Email:</label>
+                        <input onblur = "protect()" type="email" id="email" name="cust[email]">
+                        <br><br>
+
+                        <!-- Mobile-->
+                        <label for="mobile">Mobile:</label>
+                        <input type="tel" id="tel" name="cust[mobile]" pattern="^(\(04\)|04|\+614)( ?\d){8}$">
+                        <br><br>
+
+                        <!-- Credit Card-->
+                        <label for="Credit_Card">Credit Card:</label>
+                        <input onblur = "protect()" type="text" id="Credit_Card" name="cust[card]" pattern="\d{14,19 }">
+                        <br><br>
+
+                        <!-- Expiry-->
+                        <label for="Expiry">Expiry:</label>
+                        <input  type="month"  min="2020-05"  id="expiry" name="cust[expiry]" required>
+                        <br><br>
+
+                        <!-- Order-->
+                        <input type="submit" id="order" name="order" value="Order">
+                    </div>
+                    <div id="totalPrice">
+                        Total$<input type="text">
+                    </div>
+            </form>
         </div>
 
 

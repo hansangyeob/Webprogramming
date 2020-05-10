@@ -31,6 +31,9 @@ function booking_joker(){
   var str = document.getElementById("s-title").innerHTML;
   var res = str.replace("Movie title","Joker 18+");
   document.getElementById("s-title").innerHTML = res;
+  var str = document.getElementById("s-title1").innerHTML;
+  var res = str.replace("Movie title","Joker");
+  document.getElementById("s-title1").innerHTML = res;
 /*
   var str = document.getElementById("s-plot_description_contents-title").innerHTML;
   var res = str.replace("."," In 1981, party clown and aspiring stand-up comedian Arthur Fleck lives with his mother, Penny, in Gotham City. Gotham is rife with crime and unemployment, leaving swathes of the population disenfranchised and impoverished. Arthur suffers from a medical disorder that causes him to laugh at inappropriate times; he depends on social services for medication. After a gang of delinquents attacks Arthur in an alley, his co-worker, Randall, gives him a gun for protection. Arthur meets his neighbor, single mother Sophie Dumond, and invites her to his upcoming stand-up routine at a nightclub");
@@ -44,7 +47,9 @@ function booking_terminator(){
   var str = document.getElementById("s-title").innerHTML;
   var res = str.replace("Movie title","Terminator 15+");
   document.getElementById("s-title").innerHTML = res;
-
+  var str = document.getElementById("s-title1").innerHTML;
+  var res = str.replace("Movie title","Terminator");
+  document.getElementById("s-title1").innerHTML = res;
 
   /*
   ////////////////how can i replace ifram?//////////////////
@@ -59,6 +64,9 @@ function booking_black_panther(){
   var str = document.getElementById("s-title").innerHTML;
   var res = str.replace("Movie title","Black panther 12+");
   document.getElementById("s-title").innerHTML = res;
+  var str = document.getElementById("s-title1").innerHTML;
+  var res = str.replace("Movie title","Black panther");
+  document.getElementById("s-title1").innerHTML = res;
 }
 
 /* changing syn area to black panther*/
@@ -66,6 +74,9 @@ function booking_us(){
   var str = document.getElementById("s-title").innerHTML;
   var res = str.replace("Movie title","Us 15+");
   document.getElementById("s-title").innerHTML = res;
+  var str = document.getElementById("s-title1").innerHTML;
+  var res = str.replace("Movie title","Us");
+  document.getElementById("s-title1").innerHTML = res;
 }
 
 /* disabling buttons based on condition of time*/ 
@@ -108,6 +119,10 @@ function first_booking_button(){
 }
 
 function second_booking_button(){
+  var str = document.getElementById("movie_date_syn").innerHTML;
+  var res = str.replace("date","13/May - 4pm");
+  document.getElementById("movie_date_syn").innerHTML = res;
+
 
   var todayDate=new Date();
   var date=todayDate.getDate();
@@ -131,6 +146,9 @@ function second_booking_button(){
 }
 
 function third_booking_button(){
+  var str = document.getElementById("movie_date_syn").innerHTML;
+  var res = str.replace("date","25/May - 7pm");
+  document.getElementById("movie_date_syn").innerHTML = res;
 
   var todayDate=new Date();
   var date=todayDate.getDate();
@@ -154,6 +172,9 @@ function third_booking_button(){
 }
 
 function forth_booking_button(){
+  var str = document.getElementById("movie_date_syn").innerHTML;
+  var res = str.replace("date","13/Jun - 2pm");
+  document.getElementById("movie_date_syn").innerHTML = res;
 
   var todayDate=new Date();
   var date=todayDate.getDate();
@@ -181,3 +202,20 @@ function forth_booking_button(){
 function error_message(){
   alert("Sorry! This is not avaliable anymore!")
 }
+
+
+
+
+
+function protect(){
+  var protect_name = document.getElementById("name").innerText;
+  document.getElementById("name").innerText = protect_name;
+
+  var protect_email = document.getElementById("email").innerText;
+  document.getElementById("email").innerText = protect_email;
+  
+  var protect_card = document.getElementById("Credit_Card").innerText;
+  document.getElementById("Credit_Card").innerText = protect_card;
+}
+
+\

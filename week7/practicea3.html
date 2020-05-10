@@ -21,7 +21,7 @@
     <form action="https://titan.csit.rmit.edu.au/~e54061/wp/lunardo-formtest.php" method="post" target="_blank">
         <!-- Moive ID -->
         <label for="Moive ID">Moive ID:</label>
-        <input type="text" id="movie_id" name="movie[id]" patter="(ANM)">
+        <input type="hidden" id="movie_id" name="movie[id]" patter="(ANM)">
         <br><br>
         
         <!-- Moive Day-->
@@ -36,8 +36,8 @@
 
         <!-- Standard Adult-->
         <label for="S_adult">Standard Adult:</label>
-        <input type="select" id="S_adult" name="seats[STA]">
-        <select name="num_adult" id="num_adult" id="S_adult" name="seats[STA]">
+     <!--   <input type="select" id="S_adult" name="seats[STA]"> -->
+        <select  id="num_adult" id="S_adult" name="seats[STA]">
             <option value="Please Select">Please Select</option>
             <option value="1">1 </option>
             <option value="2">2 </option>
@@ -54,8 +54,8 @@
 
         <!-- Standard Concession-->
         <label for="S_concession">Standard Concession:</label>
-        <input type="select" id="S_concession" name="seats[STP]">
-        <select name="num_concession_adult" id="num_concession_adult">
+ <!--       <input type="select" id="S_concession" name="seats[STP]"> -->
+        <select  id="num_concession_adult" name="seats[STP]">
             <option value="Please Select">Please Select</option>
             <option value="1">1 </option>
             <option value="2">2 </option>
@@ -72,8 +72,8 @@
 
         <!-- Standard Child-->
         <label for="S_child">Standard Child:</label>
-        <input type="select" id="S_child" name="seats[STC]">
-        <select name="num_standard_child" id="num_standard_child">
+     <!--   <input type="select" id="S_child" name="seats[STC]"> -->
+        <select  id="num_standard_child" name="seats[STC]">
             <option value="Please Select">Please Select</option>
             <option value="1">1 </option>
             <option value="2">2 </option>
@@ -90,8 +90,8 @@
 
         <!-- First Class Adult-->
         <label for="F_class_adult">First Class Adult:</label>
-        <input type="select" id="F_class_adult" name="seats[FCA]">
-        <select name="num_first_child" id="num_first_child">
+   <!--     <input type="select" id="F_class_adult" name="seats[FCA]">-->
+        <select  id="num_first_child" name="seats[FCA]">
             <option value="Please Select">Please Select</option>
             <option value="1">1 </option>
             <option value="2">2 </option>
@@ -108,8 +108,8 @@
 
         <!-- First Class Concession-->
         <label for="F_class_concession">First Class Concession:</label>
-        <input type="select" id="F_class_concession" name="seats[FCP]">
-        <select name="num_first_child" id="num_first_child">
+     <!--   <input type="select" id="F_class_concession" name="seats[FCP]">-->
+        <select name="seats[FCP]" id="num_first_child">
             <option value="Please Select">Please Select</option>
             <option value="1">1 </option>
             <option value="2">2 </option>
@@ -126,8 +126,8 @@
 
         <!-- First Class Child-->
         <label for="F_class_child">First Class Child:</label>
-        <input type="select" id="F_class_child" name="seats[FCC]">
-        <select name="num_first_child" id="num_first_child">
+    <!--    <input type="select" id="F_class_child" name="seats[FCC]"> -->
+        <select name="seats[FCC]" id="num_first_child">
             <option value="Please Select">Please Select</option>
             <option value="1">1 </option>
             <option value="2">2 </option>
@@ -144,7 +144,7 @@
 
         <!-- Name-->
         <label for="Name">Name:</label>
-        <input type="text" id="name" name="cust[name]" pattern="[a-zA-Z ]+">
+        <input type="text" id="name" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$">
         <br><br>
 
         <!-- Email-->
@@ -154,7 +154,7 @@
 
         <!-- Mobile-->
         <label for="mobile">Mobile:</label>
-        <input type="tel" id="tel" name="cust[mobile]" pattern="/^[0-9]+$/">
+        <input type="tel" id="tel" name="cust[mobile]" pattern="^(\(04\)|04|\+614)( ?\d){8}$">
         <br><br>
 <!-- 
     function isNumber(elem)
@@ -170,7 +170,7 @@
 -->
         <!-- Credit Card-->
         <label for="Credit_Card">Credit Card:</label>
-        <input type="text" id="Credit_Card" name="cust[card]" pattern="\d{14,19}">
+        <input type="text" id="Credit_Card" name="cust[card]" pattern="\d{14,19 }"> 
         <br><br>
 
         <!-- Expiry-->

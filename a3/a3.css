@@ -133,7 +133,7 @@ li a:active{
  
 .parallax1 {
    background-image: url(../a2/img/sky.jpg);
-   height: 30%;
+   height: 50%;
   /* Create the parallax scrolling effect */
    background-attachment: fixed;
    background-position: center;
@@ -142,7 +142,7 @@ li a:active{
 }
 
 .parallax2{
-height:78rem;
+height:80rem;
 }
 
 #about_us{
@@ -400,6 +400,11 @@ h4{
   margin-top: 5rem;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+input[pattern]:invalid{
+  border: 2px red solid;
+  background-color: pink;
 }
 
 .button {
