@@ -13,6 +13,7 @@
 -->
 <body>
   
+<!-- test user-input-->
 <?php
 function test_input($data)
 {
