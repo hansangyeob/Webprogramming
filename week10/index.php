@@ -20,6 +20,7 @@ foreach($line as $i => $line)
 echo "</ol>";
 
 
+// writing file and creating form.php"
     $filename = "form.php";
 
     if ($numBytes = file_put_contents($filename,

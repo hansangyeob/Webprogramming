@@ -79,7 +79,52 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
       }
     }
 }
+// writing file and creating form.php"
+// but this is not effective way
+$filename = "form.php";
+
+if ($numBytes = file_put_contents($filename,
+$linesOrBigString))
+    echo "File Saved, $numBytes written.";
+else 
+    echo "File Access Error. Does $filename exist 
+    and have 606 permissions?";
+//we cas use 'LOCK_SH'
+
+#$filename = "..\week9\processing.php";
+#echo "<ol>";
+#$fp = fopen($filename, "r");
+#flock($fp, LOCK_SH);
+#while ($line = fgets($fp))
+#  echo "<li>$line</li>";
+#flock($fp, LOCK_UN);
+#fclose($fp);
+#echo "</ol>";
+
+# for html file, we use 'htmlspecialchars'
+#$filename = "..\week9\\feedback.html";
+#echo "<ol>";
+#$fp = fopen($filename, "r");
+#flock($fp, LOCK_SH);
+#while ($line = fgets($fp))
+#    $line = htmlspecialchars($line);
+#  echo "<li>$line</li>";
+#flock($fp, LOCK_UN);
+#fclose($fp);
+#echo "</ol>";
+
+#this is for writing.
+#$filename = ""text.txt";
+#$fp = fopen($filename,"w");
+#flock($fp, LOCK_EX); 
+
+#fwrite($fp, "Here is the first line\n");
+#fwrite($fp, "Here is the second line\n");
+
+#flock($fp, LOCK_UN);
+#fclose($fp);
 ?>
 
 </body>
 </html>
+

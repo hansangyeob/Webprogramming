@@ -62,6 +62,7 @@ echo $email;
 echo "<br>";
 ?>
 
+
     </body>        
 
 <footer style= "bottom:0px;">
@@ -69,6 +70,7 @@ echo "<br>";
     <?php
     preShow($_POST);     // do i need to use "preShow($_SESSION);"??
     ?>
+    
 <?php
  printMyCode(); 
 ?>
