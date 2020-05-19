@@ -10,9 +10,7 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="../a3/a3.css">
 
-    <!--
-    <script src='../wireframe.js'></script>
--->
+    
 </head>
 
 <body>
@@ -414,22 +412,22 @@
                         <h6>Personal Information</h6>
                         <!-- Name-->
                         <label for="Name">Name:</label>
-                        <input onblur = "protect()" type="text" id="name" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$">
+                        <input onblur = "protect()" type="text" id="name" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$" required>
                         <br><br>
 
                         <!-- Email-->
                         <label for="email">Email:</label>
-                        <input onblur = "protect()" type="email" id="email" name="cust[email]">
+                        <input onblur = "protect()" type="email" id="email" name="cust[email]" required>
                         <br><br>
 
                         <!-- Mobile-->
                         <label for="mobile">Mobile:</label>
-                        <input type="tel" id="tel" name="cust[mobile]" pattern="^(\(04\)|04|\+614)( ?\d){8}$">
+                        <input type="tel" id="tel" name="cust[mobile]" pattern="^(\(04\)|04|\+614)( ?\d){8}$" required>
                         <br><br>
 
                         <!-- Credit Card-->
                         <label for="Credit_Card">Credit Card:</label>
-                        <input onblur = "protect()" type="text" id="Credit_Card" name="cust[card]" pattern="\d{14,19 }">
+                        <input onblur = "protect()" type="text" id="Credit_Card" name="cust[card]" pattern="\d{14,19 }" required>
                         <br><br>
 
                         <!-- Expiry-->

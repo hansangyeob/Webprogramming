@@ -217,5 +217,3 @@ function protect(){
   var protect_card = document.getElementById("Credit_Card").innerText;
   document.getElementById("Credit_Card").innerText = protect_card;
 }
-
-\
