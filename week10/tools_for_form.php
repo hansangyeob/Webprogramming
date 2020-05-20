@@ -18,7 +18,7 @@
 <!--
     #this will create cells
 
-    $myfile = fopen("booking.txt","w");
+    $myfile = fopen("booking.txt","w");   w(it will delete previous data) or a(it will add up)
     $now = date('d/m h:i');
     $total = // calculate the total serverside and format it to 2 decimal places
     $cells = array_merge(
