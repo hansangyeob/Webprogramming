@@ -271,11 +271,8 @@
         <div>
             <h2>Booking form</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" target="_blank">
-            <p><span class="error">* required field</span></p>
-
 
             <div class="bookinng_form">
-            <p><span class="error">* required field</span></p>
                     <h5 id="s-title1"> Movie title </h5> 
                     <br>
                     <p id="movie_date_syn"> date</p>
@@ -412,32 +409,31 @@
 
                     <div class="personal_infor">
                         <h6>Personal Information</h6>
+                        <p style= "color:gray;"><span class="error">* required field</span></p>
+                        <br>
                         <!-- Name-->
+                        Name: <input type="text" id="name" name="cust[name]">
                         <span class="error">* <?php echo $nameErr;?></span>
-                        <label for="Name">Name:</label>
-                        <input onblur = "protect()" type="text" id="name" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$" required>
                         <br><br>
 
                         <!-- Email-->
-                        E-mail: <input type="text" name="email">
+                        E-mail: <input type="text" id="email" name="cust[email]">
                         <span class="error">* <?php echo $emailErr;?></span>
-                        <label for="email">Email:</label>
-                        <input onblur = "protect()" type="email" id="email" name="cust[email]" required>
                         <br><br>
 
                         <!-- Mobile-->
-                        <label for="mobile">Mobile:</label>
-                        <input type="tel" id="tel" name="cust[mobile]" pattern="^(\(04\)|04|\+614)( ?\d){8}$" >
+                        Mobile: <input type="text" id="mobile" name="cust[mobile]">
+                        <span class="error">* <?php echo $mobileErr;?></span>                       
                         <br><br>
 
                         <!-- Credit Card-->
-                        <label for="Credit_Card">Credit Card:</label>
-                        <input onblur = "protect()" type="text" id="Credit_Card" name="cust[card]" pattern="\d{14,19 }" required>
+                        Mobile: <input type="text" id="Credit_Card" name="cust[card]">
+                        <span class="error">* <?php echo $credit_card_Err;?></span>   
                         <br><br>
 
                         <!-- Expiry-->
                         <label for="Expiry">Expiry:</label>
-                        <input  type="month"  min="2020-05"  id="expiry" name="cust[expiry]" required>
+                        <input  type="month"  min="2020-05"  id="expiry" name="cust[expiry]" required> *
                         <br><br>
 
                         <!-- Order-->
@@ -454,6 +450,8 @@
 
 
     <!-- footer from here   -->
+    
+    <br><br><br><br><br><br><br><br>
     <hr>
     <footer>
         <div>
@@ -475,7 +473,19 @@
 <?php
  printMyCode(); 
 ?>
+     <p><strong> This area is footer for checking customer input data</strong></p>
         <?php
+        echo "<h2>Customer Input:</h2>";
+        echo $name;
+        echo "<br>";
+        echo $email;
+        echo "<br>";
+        echo $mobile;
+        echo "<br>";
+        echo $credit_card;
+        echo "<br>";
+        echo $credit_card;
+        echo "<br><br>";
         preShow($_POST);
         ?>
    

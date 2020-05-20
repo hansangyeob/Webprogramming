@@ -555,7 +555,7 @@ input[pattern]:invalid {
   position: initial;
   border: darkkhaki solid 0.2rem;
   width: 35%;
-  height: 60%;
+  height: 30rem;
   margin: 3rem;
   padding: 0.5rem;
   left: 10rem;
@@ -572,6 +572,11 @@ h5{
 h6{
   font-size: 1rem;
   padding-bottom: 1rem;
+}
+
+.required{
+  font-style: italic;
+  color: cornflowerblue;
 }
 
 .totalPrice{

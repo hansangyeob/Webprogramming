@@ -52,7 +52,7 @@ $priceObject = [
 // to test user_input 
 //trim = it will take away white space in my data 
 //stripslashes = it will take away quote
-
+session_start();
 function test_input($data)
 {
   $data = trim($data);
@@ -60,29 +60,53 @@ function test_input($data)
   $data = htmlspecialChars($data);
   return $data;
 }
+
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if (empty($_POST["name"])) {
-       $nameErr = "Name is required";
+       $nameErr = "<strong>Name is required</strong>";
      } else {
        $name = test_input($_POST["name"]);
        if (!preg_match("/^[a-zA-Z ]*$/", $name)){
-         $nameErr = "Only letters and whitespace are allowed.";
+         $nameErr = "<strong>Only letters and whitespace are allowed.</strong>";
        }
     }
 
-    if (empty($_POST["email"])) {
-      $emailErr = "Email is required";
+session_start();
+if (empty($_POST["email"])) {
+      $emailErr = "<strong>Email is required</strong>";
     } else {
       $email = test_input($_POST["email"]);
       if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-         $emailErr = "Invalid email format";
+         $emailErr = "<strong>Invalid email format</strong>";
       }
     }
 }
+session_start();
+if (empty($_POST["mobile"])) {
+  $mobileErr = "<strong>mobile is required</strong>";
+} else {
+  $mobile = test_input($_POST["mobile"]);
+  if (!preg_match("^(\(04\)|04|\+614)( ?\d){8}$", $mobile)){
+     $mobileErr = "<strong>Invalid mobile format</strong>";
+  }
+}
+
+session_start();
+if (empty($_POST["Credit_Card"])) {
+  $$credit_card_Err = "<strong> Credit card is required</strong>";
+} else {
+  $$credit_card = test_input($_POST["Credit_Card"]);
+  if (!preg_match("\d{14,19 }", $credit_card)){
+     $credit_card_Err = "<strong>Invalid credit card  format</strong>";
+  }
+}
+
 // writing file and creating form.php"
 // but this is not effective way
-$filename = "form.php";
 
+session_start();
+$filename = "form.php";
 if ($numBytes = file_put_contents($filename,
 $linesOrBigString))
     echo "File Saved, $numBytes written.";

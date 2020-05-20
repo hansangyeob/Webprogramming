@@ -60,6 +60,12 @@ echo $name;
 echo "<br>";
 echo $email;
 echo "<br>";
+echo $mobile;
+echo "<br>";
+echo $credit_card;
+echo "<br>";
+echo $credit_card;
+echo "<br>";
 ?>
 
 
@@ -70,7 +76,7 @@ echo "<br>";
     <?php
     preShow($_POST);     // do i need to use "preShow($_SESSION);"??
     ?>
-    
+
 <?php
  printMyCode(); 
 ?>
