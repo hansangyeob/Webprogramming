@@ -9,6 +9,8 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="../a4/a4.css">
+    <script defer src="../a4/script.js"></script>
+    <?php include 'tools.php'?>
 </head>
 
 <body>
@@ -268,9 +270,13 @@
     <section class="parallax2" id="booking_form1">
         <div>
             <h2>Booking form</h2>
-            <form action="../week9/processing.php" method="post" target="_blank">
-                <div class="bookinng_form">
-                    <h5 id="s-title1">Movie title</h5> 
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" target="_blank">
+            <p><span class="error">* required field</span></p>
+
+
+            <div class="bookinng_form">
+            <p><span class="error">* required field</span></p>
+                    <h5 id="s-title1"> Movie title </h5> 
                     <br>
                     <p id="movie_date_syn"> date</p>
                     <br>
@@ -407,11 +413,14 @@
                     <div class="personal_infor">
                         <h6>Personal Information</h6>
                         <!-- Name-->
+                        <span class="error">* <?php echo $nameErr;?></span>
                         <label for="Name">Name:</label>
                         <input onblur = "protect()" type="text" id="name" name="cust[name]" pattern="^[a-zA-Z \-.']{1,100}$" required>
                         <br><br>
 
                         <!-- Email-->
+                        E-mail: <input type="text" name="email">
+                        <span class="error">* <?php echo $emailErr;?></span>
                         <label for="email">Email:</label>
                         <input onblur = "protect()" type="email" id="email" name="cust[email]" required>
                         <br><br>
@@ -447,9 +456,6 @@
     <!-- footer from here   -->
     <hr>
     <footer>
-        <?php
-        preShow($_POST);
-        ?>
         <div>
             <p>Address: 2nd Floor, Rivera Park Hanoi - Số 5/28 Thành Thái, P.10, Q.114, TPHANOI.</p>
             <p>Hotline: 1911 6112. All RIGHTS RESERVED.</p>
@@ -463,7 +469,15 @@
         <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
             Programming course at RMIT University in Melbourne, Australia.</div>
         <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
-   
+   <br><br>
+        <p><strong> This area is footer for debugging</strong></p>
+  <br><br>
+<?php
+ printMyCode(); 
+?>
+        <?php
+        preShow($_POST);
+        ?>
    
     </footer>
 
@@ -475,7 +489,7 @@
         </article>
     </main>
 
-    <script defer src="../a4/script.js"></script>
+    
 </body>
 
 </html>
