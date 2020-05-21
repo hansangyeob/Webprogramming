@@ -8,7 +8,7 @@
  <?php include 'tools.php'?>
  <style>
         .error{ color:red;}
-    </style>
+</style>
 </head>
 <body>
 <h1>feedback</h1>

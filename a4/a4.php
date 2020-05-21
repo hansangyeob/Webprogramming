@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Assignment 3(S3821179)</title>
 
-    <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="../a4/a4.css">
     <script defer src="../a4/script.js"></script>
+    <!--This is where I include "tools.php" -->
     <?php include 'tools.php'?>
 </head>
 
@@ -273,24 +273,76 @@
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" target="_blank">
 
             <div class="bookinng_form">
-                    <h5 id="s-title1"> Movie title </h5> 
+                    <h5 id="s-title1">Joker </h5> 
                     <br>
-                    <p id="movie_date_syn"> date</p>
-                    <br>
+                    <div class="personal_infor">
+                        <h6>Customer Information</h6>
+                        <p style= "color:gray; font-size:0.9rem;"><span class="error">* required field</span></p>
+                        
+                        <br>
+                        
+                        <input type="submit" name="session-reset" value="session-reset">
+                        
+                        <br>
+
+                        <!-- Name-->
+                        Name: <input type="text" id="name" name="cust[name]">
+                        <span class="error">* <?php echo $nameErr;?></span>
+                        <br><br>
+
+                        <!-- Email-->
+                        E-mail: <input type="text" id="email" name="cust[email]">
+                        <span class="error">* <?php echo $emailErr;?></span>
+                        <br><br>
+
+                        <!-- Mobile-->
+                        Mobile: <input type="text" id="mobile" name="cust[mobile]">
+                        <span class="error">* <?php echo $mobileErr;?></span>                       
+                        <br><br>
+
+                        <!-- Credit Card-->
+                        Credit card: <input type="text" id="Credit_Card" name="cust[card]">
+                        <span class="error">* <?php echo $credit_card_Err;?></span>   
+                        <br><br>
+
+                        <!-- Expiry-->
+                        <label for="Expiry">Expiry:</label>
+                        <input  type="month"  min="2020-05"  id="expiry" name="cust[expiry]"> *
+                        <br><br>
+
+                        <!-- Order-->
+                        <input type="submit" id="order" name="order" value="Order">
+                    </div>
+                    <!-- Movie date-->
+                    <p id="movie_date_syn"> Date</p>
+                    <select name="select_movie_date" id="select_movie_date">
+                        <option value="06/May">06/May</option>
+                        <option value="13/May">13/May</option>
+                        <option value="25/May">06/May</option>
+                        <option value="13/May">06/May</option>
+                    </select>
+                    
+                    <br><br>
+
                     <!-- Moive ID -->
                     <label for="Moive ID">Moive ID:</label>
                     <input type="hidden" id="movie_id" name="movie[id]" patter="(ANM|ACT)">
+                    
                     <br><br>
-
+                    
                     <!-- Moive Day-->
                     <label for="Moive Day">Moive Day:</label>
                     <input type="hidden" id="movie_day" name="movie[day]" pattern="(MON| TUE| WED| THU| FRI| SAT| SUN)">
+                    
                     <br><br>
 
                     <!-- Moive Hour-->
                     <label for="Moive Hour">Moive Hour:</label>
                     <input type="hidden" id="movie_hour" name="movie[hour]" pattern="(T12|T15| T18| T21)">
+                    
                     <br><br>
+
+
 
                     <div class="standard">
                         <h6>Standard</h6>
@@ -407,38 +459,7 @@
                         <br><br>
                     </div>
 
-                    <div class="personal_infor">
-                        <h6>Personal Information</h6>
-                        <p style= "color:gray;"><span class="error">* required field</span></p>
-                        <br>
-                        <!-- Name-->
-                        Name: <input type="text" id="name" name="cust[name]">
-                        <span class="error">* <?php echo $nameErr;?></span>
-                        <br><br>
-
-                        <!-- Email-->
-                        E-mail: <input type="text" id="email" name="cust[email]">
-                        <span class="error">* <?php echo $emailErr;?></span>
-                        <br><br>
-
-                        <!-- Mobile-->
-                        Mobile: <input type="text" id="mobile" name="cust[mobile]">
-                        <span class="error">* <?php echo $mobileErr;?></span>                       
-                        <br><br>
-
-                        <!-- Credit Card-->
-                        Mobile: <input type="text" id="Credit_Card" name="cust[card]">
-                        <span class="error">* <?php echo $credit_card_Err;?></span>   
-                        <br><br>
-
-                        <!-- Expiry-->
-                        <label for="Expiry">Expiry:</label>
-                        <input  type="month"  min="2020-05"  id="expiry" name="cust[expiry]" required> *
-                        <br><br>
-
-                        <!-- Order-->
-                        <input type="submit" id="order" name="order" value="Order">
-                    </div>
+ 
                     <div id="totalPrice">
                         Total$<input type="text">
                     </div>
@@ -451,7 +472,7 @@
 
     <!-- footer from here   -->
     
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <hr>
     <footer>
         <div>

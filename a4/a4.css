@@ -527,12 +527,13 @@ input[pattern]:invalid {
 }
 
 .standard{
-  position: unset;
+  position: fixed;
   border: darkkhaki solid 0.2rem;
   width: 50%;
   height: 10rem;
   margin: 3rem;
   padding: 0.5rem;
+  left: 10rem;
 }
 .standard p {
   float: right;
@@ -578,6 +579,11 @@ h6{
   font-style: italic;
   color: cornflowerblue;
 }
+
+.error{ 
+  color:red;
+}
+
 
 .totalPrice{
 
