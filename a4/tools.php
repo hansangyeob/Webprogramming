@@ -23,18 +23,46 @@ function printMyCode() {
  echo '</ol></pre>';
 }
 
+
 # This is for resetting the session
-session_start();
 if (isset($_POST['session-reset'])) {
-    {unset($_SESSION);
+    unset($_SESSION['CUST'],$_SESSION['MOVIE'],$_SESSION['SEATS']);
     }
-}
+
 
 # This is for evaluating user input
 
+session_start();
+$errorFound = 0;
+
+function test_input($data)
+
+{
+  $data = trim($data); 
+  $data = stripslashes($data);
+  $data = htmlspecialChars($data);
+  return $data;
+}
+
+$cleanData_CUST_name = $_POST['cust']['cust[name]'];
 
 
+if (isset($_POST['submit_booking'])){
+    if (empty($_POST["cust[name]"])) {
+        $nameErr = "Name is required";
+        $errorFound++;
+      } else {
+            $name = test_input($_POST["cust[name]"]);
+            if (!preg_match("/^[a-zA-Z ]*$/", $name)){
+                $nameErr = "Only letters and whitespace are allowed.";
+                $errorFound++;
+       }if($errorFound ==0){
+        $_SESSION['CUST'] =  $_POST['cust[name]']; 
+       }
+}
 
+
+}#this is end of "if statment" for cust input
 ?>
 
 </body>

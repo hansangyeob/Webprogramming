@@ -7,7 +7,7 @@
     <title>A4 Backup Page</title>
     <style>
     label { display: inline-block; width:90px; }
-    .error { color: red;} 
+    .error { color: red; font-style : italic;} 
     </style>
 
 <?php include "../a4/tools.php" ?>
@@ -111,6 +111,8 @@
     <?php
     echo "<h5 style='color:red;'>Thie is for POST area</h5>";
     preShow($_POST);
+    echo "<h5 style='color:red;'>Thie is for SESSION area</h5>";
+    preShow($_SESSION);
     echo "<h5  style='color:red;'>Thie is for debugging area</h5>";
     printMycode();
     ?>

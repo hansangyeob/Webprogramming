@@ -30,11 +30,9 @@
 
     $array1 = ['A'=>'apple', 'B'=>'bear', 'C'=>'car'];
 
-    foreach($array1 as $key => $value) {
+    foreach($array1 as $key => $value) 
         echo "<p>Element' </p>"
 
-
-    }
 
 
 

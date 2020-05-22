@@ -38,18 +38,9 @@
 
 // to put jsp var
 session_start();
-$priceObject = [
-'full' => [
-    'STA' => 19.8,
-    'STP' => 17.5,
-    'ACT' => 15.5,
-],
-'discount' => [
-    'STA' => 10.8,
-    'STP' => 10.5,
-    'ACT' => 10.5,
-]
-];
+$priceObject = 
+['full' => ['STA' => 19.8,'STP' => 17.5,'ACT' => 15.5,],
+'discount' => ['STA' => 10.8,'STP' => 10.5,'ACT' => 10.5,]];
 
 // to test user_input 
 //trim = it will take away white space in my data 

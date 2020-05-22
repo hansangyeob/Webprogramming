@@ -7,7 +7,9 @@
     <!-- this is to include your php file to this web--> 
  <?php include 'tools9.php'?>
  <style>
-        .error{ color:red;}
+        .error{ color:red; 
+                font-style : italic;
+              }
 </style>
 </head>
 
@@ -18,7 +20,7 @@
 <!-- this is for user-input-->
 <h2>PHP Form Validation Example</h2>
 <p><span class="error">* required field</span></p>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+<form method="post" action="tutorial9.php">  
  
   <label for="Name"> Name:</label> 
   <input type="text" name="name1">
@@ -56,7 +58,7 @@
 
   <label for="Moive ID"> Moive ID:</label> 
   <select name="movie_id1" id="movie_id">
-    <option value="select1">Please select</option>  
+    <option value="please_select_1">Please select</option>  
     <option value="ACT">ACT</option>
     <option value="ANM">ANM</option>
   </select>
@@ -67,11 +69,11 @@
 
   <label for="Moive Day">Moive Day:</label>
   <select name="movie_day1" id="movie_day">
-    <option value="select2">Please select</option>
+    <option value="please_select_2">Please select</option>
     <option value="MON">MON</option>
     <option value="TUE">TUE</option>
     <option value="WED">WED</option>
-    <option value="THUR">THUR</option>
+    <option value="TUR">TUR</option>
     <option value="FRI">FRI</option>
     <option value="SAT">SAT</option>
     <option value="SUN">SUN</option>
@@ -83,13 +85,13 @@
 
   <label for="Moive Hour">Moive Hour:</label>
   <select name="movie_hour1" id="movie_hour">
-    <option value="select3">Please select</option>
+    <option value="please_select_3">Please select</option>
     <option value="T12">T12</option>
     <option value="T15">T15</option>
     <option value="T18">T18</option>
     <option value="T21">T21</option>
   </select>
-  <span class="error">* <?php echo $moiveHourErr;?></span>                  
+  <span class="error">* <?php echo $moiveHOURErr;?></span>                  
                                       
   <br><br>
 
@@ -113,9 +115,98 @@
                                       
   <br><br>
 
+<label for="STP">Seats for STP:</label>
+  <select name="STP1" id="STP">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+                    
+                                      
+  <br><br>
+
+<label for="STC">Seats for STC:</label>
+  <select name="STC1" id="STC">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+
+  <BR><BR>
+<label for="FCA">Seats for FCA:</label>
+  <select name="FCA1" id="FCA">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+
+                                      
+  <br><br>
+
+  <label for="FCP">Seats for FCP:</label>
+  <select name="FCP1" id="FCP">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+                    
+                                      
+  <br><br>
+
+  <label for="FCC">Seats for FCC:</label>
+  <select name="FCC1" id="FCC">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+                    
+                                      
+  <br><br>
+  <br><br>  
   <input type="submit" name="submit" value="Submit">  
   <br><br>
   <input type="submit" name = "session-reset" value = "session-reset">
+  
 </form>
 
 
@@ -123,10 +214,16 @@
 
 <hr>
 <footer style= "bottom:0px;">
-    <h3> This area is footer for debugging</h3>
+
+<h3> This area is footer for debugging</h3>
     <?php
-    preShow($_POST);     // do i need to use "preShow($_SESSION);"??
+    echo '$_POST';
+    preShow($_POST);    
+     echo '<br><br>';
+     echo '$_SESSION';
+    preShow($_SESSION); 
     ?>
+<hr>
 
 <?php
  printMyCode(); 

@@ -180,7 +180,7 @@ if (empty($_POST["expiry1"])) {
       "email1" => $_POST['email1'],
       "mobile1" => $_POST['mobile1'],
       "card1" => $_POST['card1'],
-      "expir1" => $_POST['card1']
+      "expiry1" => $_POST['expiry1']
     );
 }
 }
