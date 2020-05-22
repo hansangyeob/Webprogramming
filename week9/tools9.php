@@ -153,12 +153,7 @@ if (empty($_POST["card1"])) {
   if($errorFound ==0){
     #$_SESSION['CUST']["card1"]=$cleanData_CUST_card;
     #header("Location: tutorial9.php");
-    $_SESSION['CUST'] = array(
-      "name1" => $_POST['name1'],
-      "email1" => $_POST['email1'],
-      "mobile1" => $_POST['mobile1'],
-      "card1" => $_POST['card1']
-    );
+    
   }
 }
 
@@ -173,15 +168,8 @@ if (empty($_POST["expiry1"])) {
      $errorFound++;
   }
   if($errorFound ==0){
-    #$_SESSION['CUST']["expiry1"]=$cleanData_CUST_expiry;
+    $_SESSION['CUST']["expiry1"]=$cleanData_CUST_expiry;
     #header("Location: tutorial9.php");
-    $_SESSION['CUST'] = array(
-      "name1" => $_POST['name1'],
-      "email1" => $_POST['email1'],
-      "mobile1" => $_POST['mobile1'],
-      "card1" => $_POST['card1'],
-      "expir1" => $_POST['card1']
-    );
 }
 }
 
@@ -300,6 +288,8 @@ if ($seatSTA == '0' ||'1'|| '2' ||'3' ||'4' ||'5' ||'6' ||'7' ||'8' ||'9' ||'10'
 
 #flock($fp, LOCK_UN);
 #fclose($fp);
+
+
 ?>
 
 </body>

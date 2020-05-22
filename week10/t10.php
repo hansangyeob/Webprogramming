@@ -28,7 +28,7 @@
         
         <label>Movie Id:</label>
         <select name="movie[id]" id="movie[id]">
-            <option value="please_select_1">Please select</option>  
+            <option name="please_select_1">Please select</option>  
             <option value="ACT">ACT</option>
             <option value="ANM">ANM</option>
             <option value="ROM">ROM</option>
@@ -39,7 +39,7 @@
         
         <label>Movie Day:</label>
         <select name="movie[day]" id="movie[day]">
-            <option value="please_select_2">Please select</option>
+            <option name="please_select_2">Please select</option>
             <option value="MON">MON</option>
             <option value="TUE">TUE</option>
             <option value="WED">WED</option>
@@ -54,7 +54,7 @@
 
         <label>Movie Hour:</label>
         <select name="movie[hour]" id="movie[hour]">
-           <option value="please_select_3">Please select</option>
+           <option name="please_select_3">Please select</option>
            <option value="T12">T12</option>
            <option value="T15">T15</option>
            <option value="T18">T18</option>
