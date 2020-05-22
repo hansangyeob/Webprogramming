@@ -27,10 +27,9 @@ function printMyCode() {
 
 # This is for resetting the session
 if (isset($_POST['session-reset'])) {
-    unset($_SESSION['cust'],
-          $_SESSION['movie'],
-          $_SESSION['seats']);
-    }
+    session_destroy();
+    header("Location:t10.php");
+}
 
 
 # This is for evaluating user input
@@ -72,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 $errorFound++;
                }if($errorFound ==0){
                     $_SESSION['cust']['name'] =  $cleanData_CUST_name; 
-                    #header("Location: rep.php");
+                    header("Location: ../a4/receipt.php");
        }
     }
 
@@ -87,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                $errorFound++;
               }if($errorFound ==0){
                   $_SESSION['cust']["email"]=$cleanData_CUST_email;
-                  #header("Location: rep.php");
+                  header("Location: ../a4/receipt.php");
         }
         }   
     
@@ -103,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
                 $errorFound++;
                }if($errorFound ==0){
                     $_SESSION['cust']["mobile"]=$cleanData_CUST_mobile;
-                    #header("Location: rep.php");
+                    header("Location: ../a4/receipt.php");
       
     }
 
@@ -112,12 +111,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $errorFound++;
       } else {
             $card = test_input($_POST['cust']['card']);
-            if (!preg_match('/^\d{14,19 }$/',$card)){
+            if (!preg_match('/^\d{14,19}$/',$card)){
                $cardErr = "Invalid credit card format. Please type 14~19 digit only.";
                $errorFound++;
         }if($errorFound ==0){
           $_SESSION['cust']["card"]=$cleanData_CUST_card;
-          #header("Location: rep.php"); 
+          header("Location: ../a4/receipt.php"); 
         }
       }
     }
@@ -133,56 +132,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         }
         if($errorFound ==0){
           $_SESSION['cust']["expiry"]=$cleanData_CUST_expiry;
-          #header("Location: rep.php");
+          header("Location: ../a4/receipt.php");
       }
-      }
-    
-      if (empty($_POST['cust']['card'])) {
-        $cardErr = "Credit card is required";
-        $errorFound++;
-      } else {
-        $card = test_input($_POST['cust']['card']);
-        if (!preg_match('/^\d{14,19 }$/',$card)){
-           $cardErr = "Invalid credit card format. Please type 14~19 digit only.";
-           $errorFound++;
-        }if($errorFound ==0){
-          $_SESSION['cust']["card"]=$cleanData_CUST_card;
-          #header("Location: rep.php");
-        }
-      }
+    }
+
+$cleanData_movie_id = $_POST['movie']['movie_id'];      
+$cleanData_movie_day = $_POST['movie']['movie_day'];
+$cleanData_movie_hour = $_POST['movie']['movie_hour'];            
 
 
+$_SESSION['movie']['movie_id']=$_POST['movie']['id'];   
+$_SESSION['movie']['movie_day']=$_POST['movie']['day'];
+$_SESSION['movie']['movie_hour']=$_POST['movie']['hour'];
 
-           $option =$_POST['movie']['movie_id'];
-           $selectNeeded = $option[0];
-        if ($option == $selectNeeded){
-            $moiveIDErr = "Movie id required";
-            $errorFound++;
-         }if($errorFound ==0){
-              $_SESSION['movie']["movie_id"]=$option;
-              #header("Location: rep.php");
-              }
 
-              $option2 =$_POST['movie']['movie_day'];
-              $selectNeeded2 = $option2[0];
-           if ($option == $selectNeeded2){
-               $moiveDAYErr = "Movie day required";
-               $errorFound++;
-             }if($errorFound ==0){
-                $_SESSION['movie']["movie_day"]=$option2;
-                #header("Location:rep.php");
-                }
+$_SESSION['seats']['STA']=$_POST['seats']['STA'];
+$_SESSION['seats']['STP']=$_POST['seats']['STP'];
+$_SESSION['seats']['STC']=$_POST['seats']['STC'];
+$_SESSION['seats']['FCA']=$_POST['seats']['FCA'];
+$_SESSION['seats']['FCP']=$_POST['seats']['FCP'];
+$_SESSION['seats']['FCC']=$_POST['seats']['FCC'];    
 
-      
-              $option3 =$_POST['movie']['movie_hour'];
-              $selectNeeded3 = $option3[0];
-            if ($option3 == $selectNeeded3){
-                $moiveHOURErr = "Movie hour required";
-                $errorFound++;
-              }if($errorFound ==0){
-                  $_SESSION['movie']["movie_hour"]=$option3;
-                  #header("Location: rep.php");
-                  }
+if(($_POST['seats']['STA'] ==0) && 
+   ($_POST['seats']['STP'] ==0) &&
+   ($_POST['seats']['STC'] ==0) &&
+   ($_POST['seats']['FCA'] ==0) &&
+   ($_POST['seats']['FCP'] ==0) &&
+   ($_POST['seats']['FCC'] ==0)){
+    echo $seatErr = 'Please choose seat!';
+} 
+
+
 
 
 
@@ -193,3 +173,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 <footer>
 </footer>
 </html>
+
+
+
+<!--
+not working 'movie'
+
+  if ($cleanData_movie_id == $selectNeeded){
+                $moiveIDErr = "Movie id required";
+                }else{
+                    $_SESSION['movie']["movie_id"]=$option;
+                    #header("Location: rep.php");
+                   }
+
+              $option2 =$_POST['movie']['movie_day'];
+              $selectNeeded2 = $option2[0];
+           if ($option == $selectNeeded2){
+               $moiveDAYErr = "Movie day required";
+               $errorFound++;
+             }if($errorFound ==0){
+                $_SESSION['movie']["movie_day"]=$option2;
+                #header("Location:rep.php");
+                }
+              $option3 =$_POST['movie']['movie_hour'];
+              $selectNeeded3 = $option3[0];
+            if ($option3 == $selectNeeded3){
+                $moiveHOURErr = "Movie hour required";
+                $errorFound++;
+              }if($errorFound ==0){
+                  $_SESSION['movie']["movie_hour"]=$option3;
+                  #header("Location: rep.php");
+                  }
+                -->

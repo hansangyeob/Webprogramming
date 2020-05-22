@@ -28,10 +28,10 @@
         
         <label>Movie Id:</label>
         <select name="movie[id]" id="movie[id]">
-            <option name="please_select_1">Please select</option>  
-            <option value="ACT">ACT</option>
-            <option value="ANM">ANM</option>
-            <option value="ROM">ROM</option>
+            <option value="none" <?php echo $selectNeeded;?>>Please select</option>  
+            <option value="ACT" <?php echo $selectnotNeeded1 ;?> >ACT</option>
+            <option value="ANM"<?php echo $selectnotNeeded2 ;?>>ANM</option>
+            <option value="ROM"<?php echo $selectnotNeeded3 ;?>>ROM</option>
         </select>
         <span class="error">* <?php echo $moiveIDErr;?></span>                  
   
@@ -39,7 +39,7 @@
         
         <label>Movie Day:</label>
         <select name="movie[day]" id="movie[day]">
-            <option name="please_select_2">Please select</option>
+            <option name="none">Please select</option>
             <option value="MON">MON</option>
             <option value="TUE">TUE</option>
             <option value="WED">WED</option>
@@ -54,7 +54,7 @@
 
         <label>Movie Hour:</label>
         <select name="movie[hour]" id="movie[hour]">
-           <option name="please_select_3">Please select</option>
+           <option value="none">Please select</option>
            <option value="T12">T12</option>
            <option value="T15">T15</option>
            <option value="T18">T18</option>
@@ -66,7 +66,7 @@
         <br><br>
         
         <label>Seats STA:</label>
-        <select name="seats[STP]" id="STA">
+        <select name="seats[STA]" id="STA">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -79,11 +79,12 @@
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
+        <span class="error">* Please select atleast 1 seat <?php echo $seatErr ;?></span>
         
         <br>
         
         <label>Seats STP:</label>
-        <select name="seats[STP]" id="STA">
+        <select name="seats[STP]" id="STP">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -100,7 +101,7 @@
         <br>
         
         <label>Seats STC:</label>
-        <select name="seats[STC]" id="STA">
+        <select name="seats[STC]" id="STC">
             <option value="0">0</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -200,9 +201,7 @@
         <input type=submit id ="submit_booking" value='Book now!'>
        
         <br><br>
-       
         <input type="submit" name="session-reset" value="session-reset">
-      
       </form>
     </main>
 <hr>
@@ -211,7 +210,7 @@
     echo "<h5 style='color:red;'>Thie is for POST area</h5>";
     preShow($_POST);
     echo "<h5 style='color:red;'>Thie is for SESSION area</h5>";
-    preShow($_SESSION);
+    preShow($_SESSION); 
     echo "<h5  style='color:red;'>Thie is for debugging area</h5>";
     printMycode();
     ?>
