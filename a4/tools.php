@@ -28,7 +28,7 @@ function printMyCode() {
 # This is for resetting the session
 if (isset($_POST['session-reset'])) {
     session_destroy();
-    header("Location:t10.php");
+    header("Location:index-fallback.php");
 }
 
 
@@ -174,7 +174,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $_SESSION['seats']['FCP'] +
         $_SESSION['seats']['FCC'] ;
 
-        
+
     $total_price = 0.0;
     
 
