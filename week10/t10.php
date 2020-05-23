@@ -204,7 +204,10 @@
         <input type="submit" name="session-reset" value="session-reset">
       </form>
     </main>
-<hr>
+    
+  </body>
+
+  <hr>
     <footer>
     <?php
     echo "<h5 style='color:red;'>Thie is for POST area</h5>";
@@ -216,6 +219,4 @@
     ?>
 
     </footer>
-    
-  </body>
 </html>

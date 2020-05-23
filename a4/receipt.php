@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    
   <?php      
   session_start();
   
@@ -23,8 +24,9 @@
   ?>
  <style>
      .letterhead { position : absolute; left: 65rem; border-radius: 50%;};
- </style>
- <h1 style="color: royalblue;">🌕 Cinema Moon</h1>
+</style>
+
+ <h1 style="color: royalblue; ">🌕 Cinema Moon</h1>
  <h4>Thank you for using our service. </h4>
  <h4>We will try our best to present you wanderful time with us.</h4>
  <h4>Hope to see you soon! </h4>
@@ -43,18 +45,82 @@ echo'<br><br>';
 echo "- Movie hour: " . $_SESSION['movie']['movie_hour'];
 
 echo '<h3>👌 Seats</h3>';
-echo "- Seats for STA: " . $_SESSION['seats']['STA'];
-echo'<br><br>';
-echo "- Seats for STP: " . $_SESSION['seats']['STP'];
-echo'<br><br>';
-echo "- Seats for STC: " . $_SESSION['seats']['STC'];
-echo'<br><br>';
-echo "- Seats for FCA: " . $_SESSION['seats']['FCA'];
-echo'<br><br>';
-echo "- Seats for FCP: " . $_SESSION['seats']['FCP'];
-echo'<br><br>';
-echo "- Seats for FCC: " . $_SESSION['seats']['FCC'];
-echo'<br><br>';
+
+echo "<table border : 1rem;>
+<tr>
+<th>/Seat Type/</th>
+<th>/Seat code/</th>
+<th>/Reserved seats/</th>
+</tr>";
+
+echo "<tr>";
+echo "<td> Standard Adult </td>";
+echo "<td> STA </td>";
+echo "<td>"; 
+echo $_SESSION['seats']['STA'];
+echo "</td>";
+echo "</tr>";
+
+echo "<tr>";
+echo "<td> Standard Concession </td>";
+echo "<td> STP </td>";
+echo "<td>"; 
+echo $_SESSION['seats']['STP'];
+echo "</td>";
+echo "</tr>";
+
+echo "<tr>";
+echo "<td> Standard Child </td>";
+echo "<td> STC </td>";
+echo "<td>"; 
+echo $_SESSION['seats']['STC'];
+echo "</td>";
+echo "</tr>";
+
+
+
+echo "<tr>";
+echo "<td> First Class Adult </td>";
+echo "<td> FCA </td>";
+echo "<td>"; 
+echo $_SESSION['seats']['FCA'];
+echo "</td>";
+echo "</tr>";
+
+echo "<br>";
+
+
+echo "<tr>";
+echo "<td> First Class Concession </td>";
+echo "<td> FCP </td>";
+echo "<td>"; 
+echo $_SESSION['seats']['FCP'];
+echo "</td>";
+echo "</tr>";
+
+echo "<tr>";
+echo "<td> First Class Child </td>";
+echo "<td> FCC </td>";
+echo "<td>"; 
+echo $_SESSION['seats']['FCC'];
+echo "</td>";
+echo "</tr>";
+
+echo "<tr>";
+echo "<td>";
+echo "💰Total price:";
+echo "</td>";
+echo "<td>";
+echo number_format((15*$_SESSION['seats']['STA']+
+                   5*$_SESSION['seats']['STP']+
+                   7.5* $_SESSION['seats']['STC']+
+                   30* $_SESSION['seats']['FCA']+
+                   20* $_SESSION['seats']['FCP']+
+                   15* $_SESSION['seats']['FCC'])*1.19
+                   ,2);
+echo "</td>";
+echo "</tr>";
+echo "</table>";
 
 
 echo '<h3>👌 Personal information </h3>';
@@ -70,7 +136,14 @@ echo "- Expiry: " . $_SESSION['cust']['expiry'];
 
 $myfile = fopen("bookings.txt","a"); #  w(it will delete previous data) or a(it will add up)
     $now = date('d/m h:i');
-    $total = // calculate the total serverside and format it to 2 decimal places
+    $total = number_format(
+        (15*$_SESSION['seats']['STA']+
+        5*$_SESSION['seats']['STP']+
+        7.5* $_SESSION['seats']['STC']+
+        30* $_SESSION['seats']['FCA']+
+        20* $_SESSION['seats']['FCP']+
+        15* $_SESSION['seats']['FCC']) * 1.19
+    ,2); // calculate the total serverside and format it to 2 decimal places
     $cells = array_merge(
     [$now],   
     $_SESSION['cust'],  
@@ -84,6 +157,7 @@ $myfile = fopen("bookings.txt","a"); #  w(it will delete previous data) or a(it 
 ?>
 
 </body>
+
 </html>
 
 <!--

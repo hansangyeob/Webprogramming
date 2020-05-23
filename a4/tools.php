@@ -135,49 +135,110 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
           header("Location: ../a4/receipt.php");
       }
     }
-
-$cleanData_movie_id = $_POST['movie']['movie_id'];      
-$cleanData_movie_day = $_POST['movie']['movie_day'];
-$cleanData_movie_hour = $_POST['movie']['movie_hour'];            
+           
 
 
-$_SESSION['movie']['movie_id']=$_POST['movie']['id'];   
-$_SESSION['movie']['movie_day']=$_POST['movie']['day'];
-$_SESSION['movie']['movie_hour']=$_POST['movie']['hour'];
+ $_SESSION['movie']['movie_id']=$_POST['movie']['id'];   
+ $_SESSION['movie']['movie_day']=$_POST['movie']['day'];
+ $_SESSION['movie']['movie_hour']=$_POST['movie']['hour'];
 
 
-$_SESSION['seats']['STA']=$_POST['seats']['STA'];
-$_SESSION['seats']['STP']=$_POST['seats']['STP'];
-$_SESSION['seats']['STC']=$_POST['seats']['STC'];
-$_SESSION['seats']['FCA']=$_POST['seats']['FCA'];
-$_SESSION['seats']['FCP']=$_POST['seats']['FCP'];
-$_SESSION['seats']['FCC']=$_POST['seats']['FCC'];    
+ $_SESSION['seats']['STA']=$_POST['seats']['STA']; 
+ $_SESSION['seats']['STP']=$_POST['seats']['STP'];
+ $_SESSION['seats']['STC']=$_POST['seats']['STC'];
+ $_SESSION['seats']['FCA']=$_POST['seats']['FCA'];
+ $_SESSION['seats']['FCP']=$_POST['seats']['FCP'];
+ $_SESSION['seats']['FCC']=$_POST['seats']['FCC'];    
+ 
+ if(($_POST['seats']['STA'] ==0) && 
+    ($_POST['seats']['STP'] ==0) &&
+    ($_POST['seats']['STC'] ==0) &&
+    ($_POST['seats']['FCA'] ==0) &&
+    ($_POST['seats']['FCP'] ==0) &&
+    ($_POST['seats']['FCC'] ==0)){
+       echo $seatErr = '❌Please choose seat!❌';}
 
-if(($_POST['seats']['STA'] ==0) && 
-   ($_POST['seats']['STP'] ==0) &&
-   ($_POST['seats']['STC'] ==0) &&
-   ($_POST['seats']['FCA'] ==0) &&
-   ($_POST['seats']['FCP'] ==0) &&
-   ($_POST['seats']['FCC'] ==0)){
-    echo $seatErr = 'Please choose seat!';
-} 
+       $_PRICES = array(
+        "STA" => 15,
+        "STP" => 5,
+        "STC" => 7.5,
+        "FCA" => 30,
+        "FCP" => 20,
+        "FCC" => 15
+        );
+    
+        $totalqty = $_SESSION['seats']['STA'] +
+        $_SESSION['seats']['STP'] +
+        $_SESSION['seats']['STC'] +
+        $_SESSION['seats']['FCA'] +
+        $_SESSION['seats']['FCP'] +
+        $_SESSION['seats']['FCC'] ;
 
+        
+    $total_price = 0.0;
+    
 
+    
+    $tax = 0.1;
+    
+    $total_price *= 1+$tax;
+    
+    number_format($total_price,2);
+    number_format($totalqty,2);
+    number_format($_SESSION["seats"]["STA"],2);
 
 
 
 }#this is end of "if statment" for cust input
+
+
+
+
+
+
 ?>
 
 </body>
-<footer>
-</footer>
+
+
 </html>
 
+<!--
 
+$sta = 15;
+$stp = 5;
+$stc = 7.5;
+$fca = 30;
+$fcp = 20;
+$fcc = 15;
+$totalamount = "0.0";
+
+
+$totalamount =  $_SESSION['seats']['STA'] * $sta +
+                $_SESSION['seats']['STP'] * $stp +
+                $_SESSION['seats']['STC'] * $stc +
+                $_SESSION['seats']['FCA'] * $fca +
+                $_SESSION['seats']['FCP'] * $fcp +
+                $_SESSION['seats']['FCC'] * $fcc;
+
+$tax = 0.1;
+
+$totalprice = $totalamount * (1+$tax);                
+
+echo array_sum($totalamount);
+echo array_sum($totalprice);
+number_format($totalprice,2);
+
+echo number_format($totalprice,2);
+
+-->
 
 <!--
 not working 'movie'
+
+ $cleanData_movie_id = $_POST['movie']['movie_id'];      
+ $cleanData_movie_day = $_POST['movie']['movie_day'];
+ $cleanData_movie_hour = $_POST['movie']['movie_hour']; 
 
   if ($cleanData_movie_id == $selectNeeded){
                 $moiveIDErr = "Movie id required";
@@ -204,4 +265,42 @@ not working 'movie'
                   $_SESSION['movie']["movie_hour"]=$option3;
                   #header("Location: rep.php");
                   }
+-->
+
+
+<!--
+total cost not working
+
+    define("sta1",15);
+define("stp1",5);
+define("stc1",7.5);
+define("fca1",30);
+define("fcp1",20);
+define("fcc1",15);
+
+
+
+    $totalqty = $_SESSION['seats']['STA'] +
+                $_SESSION['seats']['STP'] +
+                $_SESSION['seats']['STC'] +
+                $_SESSION['seats']['FCA'] +
+                $_SESSION['seats']['FCP'] +
+                $_SESSION['seats']['FCC'] ;
+ 
+$totalamount = "0.0";
+
+$totalamount =  $_SESSION['seats']['STA']  * sta1 +
+                $_SESSION['seats']['STP'] * stp1 +
+                $_SESSION['seats']['STC'] * stc1 +
+                $_SESSION['seats']['FCA'] * fca1 +
+                $_SESSION['seats']['FCP'] * fcp1 +
+                $_SESSION['seats']['FCC'] * fcc1;
+
+$tax = 0.1;
+
+$totalprice = $totalamount * (1+$tax);                
+
+number_format($totalprice,2);
+
+
                 -->
