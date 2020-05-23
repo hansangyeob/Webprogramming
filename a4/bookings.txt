@@ -1,3 +1,4 @@
 Date	Name	Email	Mobile	MovieID	Day	Hour	"STA Qty"	"STP Qty"	"STC Qty"	"FCA Qty"	"FCP Qty"	"FCC Qty"	Total
 "22/05 08:18","Han sang yeob",s3821179@rmit.edu.vn,0398276008,1111111111111111,2024-06-05,ACT,SUN,T15,3,1,3,0,3,0
 "22/05 08:18","Han sang yeob",s3821179@rmit.edu.vn,0398276008,1111111111111111,2024-06-05,ACT,SUN,T15,3,1,3,0,3,0
+"23/05 06:50","Han sang yeob",s3821179@rmit.edu.vn,0398276008,1111111111111111,2024-06-05,ACT,SUN,T15,3,1,3,0,3,0
