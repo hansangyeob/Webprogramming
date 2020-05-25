@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
   }
+
   html,body{
     position: relative;
     height: 100%;
@@ -15,7 +16,7 @@
     }
 
   .slider-box{
-    height: 350px;
+    height: 400px;
     width: 250px;
     position: relative;
     margin: 20px;
@@ -47,7 +48,7 @@
   .shop-item-title{
     position: absolute;
     top: 0px;
-    right: 20px;
+    padding-bottom: 10rem;
     color: black;
   }
 
@@ -85,8 +86,8 @@ nav ul{
   }
   
 .category{
- margin-left: 3rem;
- margin-bottom: 2rem;
+  margin-left: 3rem;
+  padding-bottom: 2rem;
   text-align: left;
   font-weight: bolder;
   font-size: 2rem;
@@ -98,8 +99,8 @@ nav ul{
 
   .logo{
     height: 40px;
-    margin: 5px 10px;
-    float: left
+    margin: 5px 60px;
+    float: left;
   }
 
 
@@ -163,7 +164,11 @@ nav ul{
 
 
 
+.clickhere{
+  color: coral; 
+  font-size:1rem;
 
+}
 
   #carttttttttttttttttttttttttttttttt
 
@@ -285,6 +290,7 @@ nav ul{
 
 .shop-item-price {
   flex-grow: 1;
+  display: block;
   color: black;
   background-color: rgb(253, 190, 94);
   line-height: 20px;
