@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moon shopping</title>
-    
-    <!-- adding links-->
-    <link rel="stylesheet" type="text/css" href="../css/a5.css">
-    <link rel="stylesheet" href="../css/swiper.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
-   <!--
-    <script defer src="../js/swiper.min.js"></script>
--->
-</head>
+<?php
+require "header.php";
+?>
 
 <body>
 
@@ -23,10 +12,10 @@
         <img src="../img/logo_dummy.png" alt="logo" class="logo"> 
         <div class="menu-bar">
             <ul>
-                <li><a href="../html/a5.html">Home</a></li>
-                <li><a href="../html/products.html">Products</a></li>
-                <li><a href="cart.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart</a></li>
-                <li><a href="../html/signup.html">Sign up</a></li>
+                <li><a href="../php/a5.php">Home</a></li>
+                <li><a href="../php/products.php">Products</a></li>
+                <li><a href="../php/cart.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart</a></li>
+                <li><a href="../php/signup.php">Sign up</a></li>
                 <li><a href="../php/login.php">Log in</a></li>
             </ul>
         </div>
@@ -76,18 +65,8 @@
 </body>
 
 <hr>
-<footer>
-    <script defer src="../js/a5.js"></script>
-    <div>
-        <p>Address: 2nd Floor, Rivera Park Hanoi - Số 5/28 Thành Thái, P.10, Q.114, TPHANOI.</p>
-        <p>Hotline: 1911 6112. All RIGHTS RESERVED.</p>
-    </div>
-
-    <div>&copy;
-       Han sang yeob, S3821179
-    </div>
-    <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web
-        Programming course at RMIT University in Melbourne, Australia.</div>
-    <div>
+<?php
+require "footer.php";
+?>
 </footer>
 </html>

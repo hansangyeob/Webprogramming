@@ -1,0 +1,160 @@
+<!-- http://localhost/wp-s3821179.github.io/a5_final/php/a5.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<?php
+require "header.php";
+?>
+
+<body>
+    <!--class="nav-main-bar" -->
+    <div class="top-nav-bar">
+        <img src="../img/logo_dummy.png" alt="logo" class="logo"> 
+        <div class="menu-bar">
+            <ul>
+                <li><a href="../php/a5.php">Home</a></li>
+                <li><a href="../php/products.php">Products</a></li>
+                <li><a href="../php/cart.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart</a></li>
+                <li><a href="../php/signup.php">Sign up</a></li>
+                <li><a href="../php/login.php">Log in</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Fisrt Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <!-- slide 1 -->
+            <div> <h2 class="category">LAMP</h2>   
+                 
+            <div class="slider-box">
+                <p class="shop-item-title" style="font-weight: lighter;">Desk Lamp</p>
+                <div class="img-box">
+                    <img  class="shop-item-image" src="../img/lamp1.jpg" alt="lamp">
+                </div>
+
+                <p class="shop-item-details"> Cozy desk lamp
+                    <a href="#" class="shop-item-price"> $ 19.99</a>   <!-- ????????????? -->
+                </p>
+
+                <div class="btn btn-primary shop-item-button">
+                    <a  onclick=addedCart();>Add to Cart</a>
+                </div>
+            </div>
+            </div>
+
+            
+            <div> <h2 class="category" ><a href="../html/products.html" class="clickhere"> Click here for more</a> </h2>
+                <div class="slider-box">
+                    <p class="shop-item-title" style="font-weight: lighter;">Sleeping Lamp</p>                    
+                    <div class="img-box">
+                        <img class="shop-item-image" src="../img/lamp2.jpg" alt="lamp">
+                    </div>
+    
+                    <p class="shop-item-details"> white sleeping lamp
+                        <a href="#" class="shop-item-price"> $ 19.99</a>   <!--  ???????????-->
+                    </p>
+    
+                    <div class="btn btn-primary shop-item-button">
+                        <a  onclick=addedCart();>Add to Cart</a>
+                    </div>
+                </div>
+        
+            </div>
+            <!-- slide 1.2 -->
+            <div> <h2 class="category" style="color: aliceblue;">. </h2> 
+            <div class="slider-box">
+                <p class="shop-item-title" style="font-weight: lighter;">Standing </p>
+                <div class="img-box">
+                    <img class="shop-item-image" src="../img/lamp3.jpg" alt="lamp">
+                </div>
+
+                <p class="shop-item-details"> luxury stand
+                    <a href="#" class="shop-item-price"> $ 79.99</a>    <!-- ???????????  -->
+                </p>
+                <div class="btn btn-primary shop-item-button">
+                    <a  onclick=addedCart();>Add to Cart</a>
+                </div>
+            </div>
+       </div>
+         
+
+       
+    </div><!-- end of swiper- container-->
+
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <!-- slide 1.3 -->
+            <div> <h2 class="category">SOFA</h2>
+            <div class="slider-box">
+                <p class="shop-item-title" style="font-weight: lighter;">Black sofa</p>
+                <div class="img-box">
+                    <img class="shop-item-image" src="../img/sofa1.jpg" alt="sofa1">
+                </div>
+
+                <p class="shop-item-details"> Cozy sofa for 2 people
+                    <a href="#" class="shop-item-price"> $ 199.99</a>    <!-- ???????????????? -->
+                </p>
+
+                <div class="btn btn-primary shop-item-button">
+                    <a  onclick=addedCart();>Add to Cart</a>
+                </div>
+            </div>
+            </div>
+
+            
+            <div> <h2 class="category"><a href="../html/products.html" class="clickhere">Click here for more</a> </h2>
+                <div class="slider-box">
+                    <p class="shop-item-title" style="font-weight: lighter;">Luxury </p>
+                    <div class="img-box">
+                        <img class="shop-item-image" src="../img/sofa2.jpg" alt="sofa2">
+                    </div>
+    
+                    <p class="shop-item-details"> Sofa with white leather 
+                        <a href="#" class="shop-item-price"> $ 299.99</a>    <!-- ??????????????????  -->
+                    </p>
+    
+                    <div class="btn btn-primary shop-item-button">
+                        <a  onclick=addedCart();>Add to Cart</a>
+                    </div>
+                </div>
+        
+            </div>
+            <!-- slide 2.3 -->
+            <div> <h2 class="category" style="color: aliceblue;">. </h2> 
+            <div class="slider-box">
+                <p class="shop-item-title" style="font-weight: lighter;">Family sofa </p>
+                <div class="img-box">
+                    <img class="shop-item-image" src="../img/sofa3.jpg" alt="sofa3">
+                </div>
+
+                <p class="shop-item-details"> Cozy sofa for 8 people
+                    <a href="#" class="shop-item-price"> $ 349.99</a>    <!-- ??????????????-->
+                </p>
+                <div class="btn btn-primary shop-item-button">
+                    <a  onclick=addedCart();>Add to Cart</a>
+                </div>
+            </div>
+       </div>
+         
+
+       
+    </div><!-- end of swiper- container-->
+
+
+
+
+
+
+</body>
+
+<hr>
+<?php
+ require "footer.php";
+?>
+</html>
