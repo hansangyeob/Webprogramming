@@ -47,7 +47,7 @@ require "header.php";
             </div>
 
             
-            <div> <h2 class="category" ><a href="../html/products.html" class="clickhere"> Click here for more</a> </h2>
+            <div> <h2 class="category" ><a href="../php/products.php" class="clickhere"> Click here for more</a> </h2>
                 <div class="slider-box">
                     <p class="shop-item-title" style="font-weight: lighter;">Sleeping Lamp</p>                    
                     <div class="img-box">
@@ -108,7 +108,7 @@ require "header.php";
             </div>
 
             
-            <div> <h2 class="category"><a href="../html/products.html" class="clickhere">Click here for more</a> </h2>
+            <div> <h2 class="category"><a href="../php/products.php" class="clickhere">Click here for more</a> </h2>
                 <div class="slider-box">
                     <p class="shop-item-title" style="font-weight: lighter;">Luxury </p>
                     <div class="img-box">
