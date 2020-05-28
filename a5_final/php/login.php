@@ -14,7 +14,7 @@ require "header.php";
         <div class="menu-bar">
             <ul>
                <li><a href="../php/a5.php">Home</a></li>
-                <li><a href="../php/products.php">Products</a></li>
+                <li><a href="../php/products.php">Antique</a></li>
                 <li><a href="../php/cart.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart</a></li>
                 <li><a href="../php/signup.php">Sign up</a></li>
                 <li><a href="../php/login.php">Log in</a></li>
@@ -22,7 +22,7 @@ require "header.php";
         </div>
     </div>
 
-<form action="login.php" method="post" name="Login_Form">
+<form action="process.php" method="post" name="Login_Form">
     <table>
       <tr>
         <td><h3>Login</h3></td>
@@ -32,12 +32,12 @@ require "header.php";
       </tr>
       <tr>
         <td>Username</td>
-        <td><input name="username" type="text" placeholder="Enter Your User Name"></td>
+        <td><input name="username_login" type="text" placeholder="Enter Your User Name"></td>
         <td> <?php echo $err;?></td>
       </tr>
       <tr>
         <td>Password</td>  
-        <td><input name="password" type="password" class="Input" placeholder="Enter Your Password"></td>
+        <td><input name="password_login" type="password" class="Input" placeholder="Enter Your Password"></td>
         <td><?php echo $err;?></td>
       </tr>
       <tr>
@@ -46,7 +46,9 @@ require "header.php";
 
       </tr>
     </table>
-<form action="a5.php" name = "logged-out"ethod = "post"> Log out</form>
+<form action="a5.php" name = "logged-out" method = "post">
+<button> Log out</button>
+ </form>
     <br><br>
         <input type="submit" name="session-reset" value="session-reset">
 

@@ -13,7 +13,7 @@ require "header.php";
         <div class="menu-bar">
             <ul>
             <li><a href="../php/a5.php">Home</a></li>
-                <li><a href="../php/products.php">Products</a></li>
+                <li><a href="../php/products.php">Antique</a></li>
                 <li><a href="../php/cart.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart</a></li>
                 <li><a href="../php/signup.php">Sign up</a></li>
                 <li><a href="../php/login.php">Log in</a></li>

@@ -275,6 +275,6 @@ require "header.php";
 
 <hr>
 <?php
-#require "footer.php";
+require "footer.php";
 ?>
 </html>

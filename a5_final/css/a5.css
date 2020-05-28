@@ -6,6 +6,7 @@
   html,body{
     position: relative;
     height: 100%;
+    
   }
   
   body{ 
@@ -167,6 +168,11 @@ nav ul{
 .clickhere{
   color: coral; 
   font-size:1rem;
+
+}
+
+#clickhere_products{
+  color: #eee;
 
 }
 
@@ -404,5 +410,4 @@ nav ul{
   margin: 40px auto 40px auto;
   font-size: 1.75em;
 }
-
 
