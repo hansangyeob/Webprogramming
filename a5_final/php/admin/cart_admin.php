@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-require "header.php";
+require "include/header.php";
 ?>
 
 <body>
@@ -11,12 +11,12 @@ require "header.php";
     <div class="top-nav-bar">
         <img src="../img/logo_dummy.png" alt="logo" class="logo"> 
         <div class="menu-bar">
-            <ul>
-                <li><a href="../php/a5.php">Home</a></li>
-                <li><a href="../php/products.php">Antique</a></li>
-                <li><a href="../php/cart.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart</a></li>
-                <li><a href="../php/signup.php">Sign up</a></li>
-                <li><a href="../php/login.php">Log in</a></li>
+        <ul>
+                <li><a href="../php/admin/a5_admin.php">Home</a></li>
+                <li><a href="../php//admin/products_admin.php">Antique</a></li>
+                <li><a href="../php/admin/cart_admin.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart</a></li>
+                <li><a href="../php//admin/signup_admin.php">Sign up</a></li>
+                <li><a href="../php/login_admin.php">Log in</a></li>
             </ul>
         </div>
     </div>
@@ -66,7 +66,7 @@ require "header.php";
 
 <hr>
 <?php
-#require "footer.php";
+require "include/footer.php";
 ?>
 </footer>
 </html>
