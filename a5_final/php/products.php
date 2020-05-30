@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-require "header.php";
+require "include/header.php";
 ?>
 
 <body>
@@ -274,6 +274,6 @@ require "header.php";
 
 <hr>
 <?php
-#require "footer.php";
+require "include/footer.php";
 ?>
 </html>

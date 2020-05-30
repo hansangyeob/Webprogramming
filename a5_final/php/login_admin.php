@@ -13,10 +13,11 @@ require "header.php";
         <img src="../img/logo_dummy.png" alt="logo" class="logo"> 
         <div class="menu-bar">
         <ul>
-                <li><a href="../php/user/a5.php">Home</a></li>
-                <li><a href="../php/user/products.php">Antique</a></li>
-                <li><a href="../php/user/cart.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart</a></li>
-                <li><a href="../php/user/login.php">Log in</a></li>
+                <li><a href="a5_admin.php">Home</a></li>
+                <li><a href="products_admin.php">Antique</a></li>
+                <li><a href="cart_admin.php"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Cart</a></li>
+                <li><a href="signup_admin.php">Manage</a></li>
+                <li><a href="login_admin.php">Log in</a></li>
             </ul>
         </div>
     </div>
