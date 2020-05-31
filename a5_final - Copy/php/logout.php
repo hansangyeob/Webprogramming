@@ -22,26 +22,20 @@ include "connection.php";
         </div>
     </div>
 
-<div align="center">
-<h1>Register</h1>
-<br>
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post"> 
-    <input type="text" name ="username_login" placeholder="Usrname">
-    <?php echo $errmess1 ?>
-    <br>
-    <input type="password" name ="password_login" placeholder="Password">
-    <?php echo $errmess2 ?>
-    <br>
-    <input type="password" name ="pwd-repeat" placeholder="Repeat Password">
-    <?php echo $errmess3 ?>
-    <br>
-    <br>
-    <button type="submit" name="signup-submit"> Register</button>
-</form>
-<p>
-    Already a member? <a href="login.php">login here! </a>
-</p>
-</div>
+
+<h1>Log out</h1>
+<?php
+   session_start();
+   session_destroy();
+   unset($_SESSION['username_login']);
+   $_SESSION['message'] = "You are logged out!!";
+   header("Location:login.php");
+?>
 </body>
 
+<hr>
+
+<?php
+require "footer.php";
+?>
 </html>
