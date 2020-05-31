@@ -1,34 +1,32 @@
 <?php
+//get valuses passed from login.php
+$username_login = $_POST['username_login'];
+$password_login = $_POST['password_login'];
 
-$urname = $_POST["username"];
-$pasword = $_POST["password"];
+// to pervent mysql injection
+$username_login = stripcslashes($username_login);
+$password_login = stripcslashes($password_login);
+$username_login = mysql_real_escape_string($username_login);
+$password_login = mysql_real_escape_string($password_login);
 
-$urname = stripcslashes($urname);
-$pasword = stripcslashes($pasword);
-$urname = mysql_real_escape_string($urname);
-$pasword = mysql_real_escape_string($pasword);
-
+//connect to the server and select db
 $servername = "sql104.epizy.com";
 $username1 = "epiz_25803616";
 $password_sql = "NJsCG4o3dKXuOwD";
 $dbName = "epiz_25803616_s3821179";
-//$servername = 'localhost';
-//$port = '3306';
-//$username1 ='root';
-//$password_sql ='root';
-//$dbName=='myDB';
+mysql_connect($servername,$username1,$password_sql,$dbName);
 
-// Create connection
-mysqli_connect($servername, $username1,$password_sql,$dbName);
-mysql_select_db("epiz_25803616_s3821179");
+// Query the db for users
+$result = mysql_query("SELECT * FROM data WHERE 'name' = '$username_login' and 'password_1'='$password_login'");
 
-$result = mysql_query("select * from users where uidUsers=='$urname' and pwdusers='$pasword'")
-              or die("failed to query database".mysql_error());
 $row = mysql_fetch_array($result);
-if ($row['username'] == $urname && $row['password'] == $pasword){
-    echo "Login success!!".$row['username'];
-} else{
-    echo "failed to login!";
+if ($row["name"] == $username_login && $row ["password_1"] == $password_login){
+    echo "Login success!";
+    header("Location: a5_admin.php");
+}else{
+    echo"Failed to login!";
 }
+
+
 
 ?>

@@ -3,7 +3,7 @@
 <html lang="en">
 
 <?php
-require "include/header.php";
+require "header.php";
 ?>
 
 <body>
